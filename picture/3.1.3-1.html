@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html class="ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523" lang="zh" xml:lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>结果: 程序 1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c section > table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c section > pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c div > table,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c div > pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c article > table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c article > pre,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j section > table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j section > pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j div > table,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j div > pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j article > table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j article > pre,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c p.note, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c p.fatal,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j p.note, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j p.fatal,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.c > table.layoutcontainer, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l p.note,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c p.note,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r p.note,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r table, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r pre, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r p.note,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 article, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 aside, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 details, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 figcaption, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 figure, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 footer, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 header, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 hgroup, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 nav, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 section { display: block }
+html.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 { font-size: 100% }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 ul, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 dd { margin: 0 0 0 40px }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 nav ul, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 img { border: 0; vertical-align: middle }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 svg:not(:root) { overflow: hidden }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 figure { margin: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 table { border-collapse: collapse; border-spacing: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p { margin-top: 0; text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h1.heading1 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h2.heading2 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h3.heading3 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h4.heading4 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h5.heading5 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 h6.heading6 { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 span { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 table { margin-bottom: 1em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 td, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 td[class$="fixed"], .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 th[class$="fixed"] { white-space: pre }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 section, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 article { padding-top: 1px; padding-bottom: 8px }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .stacked-value { text-align: left; display: block }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .stacked-cell > .stacked-value, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 td.data > td.data, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 th.data > td.data, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 th.data > th.data, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 td.data > th.data, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 th.header > th.header { border: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .stacked-cell > div.data { border-width: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > p { margin: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch { display: table }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .toc { display: none }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .proc_note_group, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .proc_title_group { margin-bottom: 1em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p.proctitle { margin: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p.note, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p.warning, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p.error, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 p.fatal { display: table }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notebanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warnbanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorbanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalbanner,
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notecontent, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warncontent, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorcontent, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notebanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warnbanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorbanner, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalbanner { padding-right: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body > div > ol li { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .c { text-align: center }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .r { text-align: right }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .l { text-align: left }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .j { text-align: justify }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .d { text-align: right }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .b { vertical-align: bottom }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .m { vertical-align: middle }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .t { vertical-align: top }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 a:active { color: #800080 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch { border: hidden; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bycontentfolder {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > colgroup > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > colgroup, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > * > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer > tfoot { border: none; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .cell, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contentfolder, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contentitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contentproclabel, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .data, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .folderaction {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph { border: hidden; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading1, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading2, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading3, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading4, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading5, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .heading6 { font-family: MYingHei_18030_C-Medium, Helvetica, sans-serif }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .indexaction, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .indexitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutcontainer, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 a:link { color: #0000ff }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list3, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list4, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list5, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list6, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list7, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list8, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem3, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem4, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem5, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem6, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem7, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem8, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output { border: hidden; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pagesitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pagesproclabel, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > colgroup > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > colgroup, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > * > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip > tfoot { border: none; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter10, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter2, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter3, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter4, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter5, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter6, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter7, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter8, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle10, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle2, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle3, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle4, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle5, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle6, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle7, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle8, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > colgroup > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > colgroup, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > * > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer > tfoot { border: none; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table { border: hidden; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > colgroup > col, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > colgroup, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > * > tr, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > thead, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > tbody, .ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer > tfoot { border: none; }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 a:visited { color: #800080 }
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_a972dc4d-b4b0-4d42-9c1e-a6791dd75523 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_a972dc4d-b4b0-4d42-9c1e-a6791dd75523" class="c body">
+<h1 class="body toc">结果: 程序 1.sas</h1>
+<section data-name="Logistic" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">“LOGISTIC”过程</p>
+</div>
+<h1 class="contentprocname toc">Logistic 过程</h1>
+<article aria-label="模型信息">
+<h1 class="contentitem toc">模型信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="模型信息">
+<caption aria-label="模型信息"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">模型信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集</th>
+<td class="data">WORK.TRAIN_STD</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应变量</th>
+<td class="data">TARGET</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应水平数</th>
+<td class="data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">模型</th>
+<td class="data">二元 Logit</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">优化方法</th>
+<td class="data">Fisher 评分法</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX1" aria-label="观测汇总">
+<h1 class="contentitem toc">观测汇总</h1>
+<table class="table" style="border-spacing: 0" aria-label="观测汇总">
+<caption aria-label="观测汇总"></caption>
+<colgroup><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">读取的观测数</th>
+<td class="r data">23135</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">使用的观测数</th>
+<td class="r data">23135</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="响应概略">
+<h1 class="contentitem toc">响应概略</h1>
+<table class="table" style="border-spacing: 0" aria-label="响应概略">
+<caption aria-label="响应概略"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">响应概略</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">有序<br/>值</th>
+<th class="b header" scope="col">TARGET</th>
+<th class="r b header" scope="col">总<br/>频数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">0</td>
+<td class="r data">15389</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">1</td>
+<td class="r data">7746</td>
+</tr>
+</tbody>
+</table>
+<div class="proc_note_group">
+<p class="c proctitle">建模的概率为 TARGET=&apos;1&apos;。</p>
+</div>
+</article>
+<article id="IDX3" aria-label="分类水平信息">
+<h1 class="contentitem toc">分类水平信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="分类水平信息">
+<caption aria-label="分类水平信息"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">分类水平信息</th>
+</tr>
+<tr>
+<th class="b header" scope="col">分类</th>
+<th class="b header" scope="col">值</th>
+<th class="c b header" colspan="3" scope="colgroup">设计变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">3</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX4" aria-label="收敛状态">
+<h1 class="contentitem toc">收敛状态</h1>
+<table class="table" style="border-spacing: 0" aria-label="收敛状态">
+<caption aria-label="收敛状态"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">模型收敛状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">满足收敛准则 (GCONV=1E-8)。</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="拟合统计量">
+<h1 class="contentitem toc">拟合统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="拟合统计量">
+<caption aria-label="拟合统计量"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">模型拟合统计量</th>
+</tr>
+<tr>
+<th class="b header" scope="col">准则</th>
+<th class="r b header" scope="col">仅截距</th>
+<th class="r b header" scope="col">截距和协变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">29500.878</td>
+<td class="r data">22951.420</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">29508.927</td>
+<td class="r data">23031.911</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">29498.878</td>
+<td class="r data">22931.420</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX6" aria-label="全局检验">
+<h1 class="contentitem toc">全局检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="全局检验">
+<caption aria-label="全局检验"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">检验全局原假设: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">检验</th>
+<th class="r b header" scope="col">卡方</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">似然比</th>
+<td class="r data">6567.4575</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">评分</th>
+<td class="r data">5140.4298</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">3552.4322</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX7" aria-label="3 型检验">
+<h1 class="contentitem toc">3 型检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="3 型检验">
+<caption aria-label="3 型检验"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">3 型效应分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1</td>
+<td class="r data">1865.4159</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<td class="r data">3</td>
+<td class="r data">1200.1550</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">1</td>
+<td class="r data">172.2645</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1</td>
+<td class="r data">40.9807</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<td class="r data">1</td>
+<td class="r data">22.7960</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">1</td>
+<td class="r data">41.4935</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<td class="r data">1</td>
+<td class="r data">34.9795</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX8" aria-label="参数估计">
+<h1 class="contentitem toc">参数估计</h1>
+<table class="table" style="border-spacing: 0" aria-label="参数估计">
+<caption aria-label="参数估计"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">最大似然估计分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">参数</th>
+<th class="b header" scope="col"> &#160;</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">估计</th>
+<th class="r b header" scope="col">标准<br/>误差</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-6.2444</td>
+<td class="r data">0.2781</td>
+<td class="r data">504.2377</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.5920</td>
+<td class="r data">0.0137</td>
+<td class="r data">1865.4159</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0.0387</td>
+<td class="r data">0.0455</td>
+<td class="r data">0.7225</td>
+<td class="r data">0.3953</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7974</td>
+<td class="r data">0.0439</td>
+<td class="r data">329.5257</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">1.8158</td>
+<td class="r data">0.0644</td>
+<td class="r data">795.7958</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">2.0311</td>
+<td class="r data">0.1548</td>
+<td class="r data">172.2645</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.0480</td>
+<td class="r data">0.00750</td>
+<td class="r data">40.9807</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.1222</td>
+<td class="r data">0.0256</td>
+<td class="r data">22.7960</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.3675</td>
+<td class="r data">0.0570</td>
+<td class="r data">41.4935</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0.1005</td>
+<td class="r data">0.0170</td>
+<td class="r data">34.9795</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX9" aria-label="优比">
+<h1 class="contentitem toc">优比</h1>
+<table class="table" style="border-spacing: 0" aria-label="优比">
+<caption aria-label="优比"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">优比估计</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">点估计</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/>置信限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1.808</td>
+<td class="r data">1.760</td>
+<td class="r data">1.857</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  0 vs 3</th>
+<td class="r data">14.740</td>
+<td class="r data">11.138</td>
+<td class="r data">19.508</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  1 vs 3</th>
+<td class="r data">31.480</td>
+<td class="r data">23.790</td>
+<td class="r data">41.655</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  2 vs 3</th>
+<td class="r data">87.155</td>
+<td class="r data">64.067</td>
+<td class="r data">118.563</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">7.622</td>
+<td class="r data">5.628</td>
+<td class="r data">10.323</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1.049</td>
+<td class="r data">1.034</td>
+<td class="r data">1.065</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB        0 vs 1</th>
+<td class="r data">0.783</td>
+<td class="r data">0.708</td>
+<td class="r data">0.866</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">0.692</td>
+<td class="r data">0.619</td>
+<td class="r data">0.774</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER       0 vs 1</th>
+<td class="r data">1.223</td>
+<td class="r data">1.144</td>
+<td class="r data">1.307</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX10" aria-label="关联统计量">
+<h1 class="contentitem toc">关联统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="关联统计量">
+<caption aria-label="关联统计量"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">预测概率和观测响应的关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">一致部分所占百分比</th>
+<td class="r data">80.7</td>
+<th class="rowheader" scope="row">Somers D</th>
+<td class="r data">0.615</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">不一致部分所占百分比</th>
+<td class="r data">19.3</td>
+<th class="rowheader" scope="row">Gamma</th>
+<td class="r data">0.615</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">结值百分比</th>
+<td class="r data">0.0</td>
+<th class="rowheader" scope="row">Tau-a</th>
+<td class="r data">0.274</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">对</th>
+<td class="r data">119203194</td>
+<th class="rowheader" scope="row">c</th>
+<td class="r data">0.807</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX11" aria-label="ROC 曲线">
+<h1 class="contentitem toc">ROC 曲线</h1>
+<div class="c">
+<img style="height: 480px; width: 480px" alt="“模型”的 ROC 曲线" src="data:image/png;base64,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"/>
+</div>
+</article>
+<article id="IDX12" aria-label="分类表">
+<h1 class="contentitem toc">分类表</h1>
+<table class="table" style="border-spacing: 0" aria-label="分类表">
+<caption aria-label="分类表"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="10" scope="colgroup">分类表</th>
+</tr>
+<tr>
+<th class="r b header" rowspan="2" scope="col">概率<br/>水平</th>
+<th class="c b header" colspan="2" scope="colgroup">正确</th>
+<th class="c b header" colspan="2" scope="colgroup">不正确</th>
+<th class="c b header" colspan="5" scope="colgroup">百分比</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">事件</th>
+<th class="r b header" scope="col">非<br/>事件</th>
+<th class="r b header" scope="col">事件</th>
+<th class="r b header" scope="col">非<br/>事件</th>
+<th class="r b header" scope="col">正确</th>
+<th class="r b header" scope="col">灵敏<br/>度</th>
+<th class="r b header" scope="col">特异<br/>度</th>
+<th class="r b header" scope="col">阳性<br/>预测值</th>
+<th class="r b header" scope="col">阴性<br/>预测值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">0.330</th>
+<td class="r data">6456</td>
+<td class="r data">9874</td>
+<td class="r data">5515</td>
+<td class="r data">1290</td>
+<td class="r data">70.6</td>
+<td class="r data">83.3</td>
+<td class="r data">64.2</td>
+<td class="r data">53.9</td>
+<td class="r data">88.4</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Logistic" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX13" class="proc_title_group">
+<p class="c proctitle">“LOGISTIC”过程</p>
+</div>
+<h1 class="contentprocname toc">Logistic 过程</h1>
+<article aria-label="模型信息">
+<h1 class="contentitem toc">模型信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="模型信息">
+<caption aria-label="模型信息"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">模型信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集</th>
+<td class="data">WORK.VALID_STD</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应变量</th>
+<td class="data">TARGET</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应水平数</th>
+<td class="data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">模型</th>
+<td class="data">二元 Logit</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">优化方法</th>
+<td class="data">Fisher 评分法</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX14" aria-label="观测汇总">
+<h1 class="contentitem toc">观测汇总</h1>
+<table class="table" style="border-spacing: 0" aria-label="观测汇总">
+<caption aria-label="观测汇总"></caption>
+<colgroup><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">读取的观测数</th>
+<td class="r data">10207</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">使用的观测数</th>
+<td class="r data">10207</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX15" aria-label="响应概略">
+<h1 class="contentitem toc">响应概略</h1>
+<table class="table" style="border-spacing: 0" aria-label="响应概略">
+<caption aria-label="响应概略"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">响应概略</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">有序<br/>值</th>
+<th class="b header" scope="col">TARGET</th>
+<th class="r b header" scope="col">总<br/>频数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">0</td>
+<td class="r data">6839</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">1</td>
+<td class="r data">3368</td>
+</tr>
+</tbody>
+</table>
+<div class="proc_note_group">
+<p class="c proctitle">建模的概率为 TARGET=&apos;1&apos;。</p>
+</div>
+</article>
+<article id="IDX16" aria-label="分类水平信息">
+<h1 class="contentitem toc">分类水平信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="分类水平信息">
+<caption aria-label="分类水平信息"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">分类水平信息</th>
+</tr>
+<tr>
+<th class="b header" scope="col">分类</th>
+<th class="b header" scope="col">值</th>
+<th class="c b header" colspan="3" scope="colgroup">设计变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">3</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX17" aria-label="收敛状态">
+<h1 class="contentitem toc">收敛状态</h1>
+<table class="table" style="border-spacing: 0" aria-label="收敛状态">
+<caption aria-label="收敛状态"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">模型收敛状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">满足收敛准则 (GCONV=1E-8)。</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX18" aria-label="拟合统计量">
+<h1 class="contentitem toc">拟合统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="拟合统计量">
+<caption aria-label="拟合统计量"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">模型拟合统计量</th>
+</tr>
+<tr>
+<th class="b header" scope="col">准则</th>
+<th class="r b header" scope="col">仅截距</th>
+<th class="r b header" scope="col">截距和协变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">12947.684</td>
+<td class="r data">10111.263</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">12954.914</td>
+<td class="r data">10183.572</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">12945.684</td>
+<td class="r data">10091.263</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX19" aria-label="全局检验">
+<h1 class="contentitem toc">全局检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="全局检验">
+<caption aria-label="全局检验"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">检验全局原假设: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">检验</th>
+<th class="r b header" scope="col">卡方</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">似然比</th>
+<td class="r data">2854.4203</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">评分</th>
+<td class="r data">2244.1498</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">1594.1617</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX20" aria-label="3 型检验">
+<h1 class="contentitem toc">3 型检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="3 型检验">
+<caption aria-label="3 型检验"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">3 型效应分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1</td>
+<td class="r data">833.9897</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<td class="r data">3</td>
+<td class="r data">562.4228</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">1</td>
+<td class="r data">57.5659</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1</td>
+<td class="r data">25.9451</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<td class="r data">1</td>
+<td class="r data">8.7002</td>
+<td class="r data">0.0032</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">1</td>
+<td class="r data">23.3685</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<td class="r data">1</td>
+<td class="r data">21.6227</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX21" aria-label="参数估计">
+<h1 class="contentitem toc">参数估计</h1>
+<table class="table" style="border-spacing: 0" aria-label="参数估计">
+<caption aria-label="参数估计"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">最大似然估计分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">参数</th>
+<th class="b header" scope="col"> &#160;</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">估计</th>
+<th class="r b header" scope="col">标准<br/>误差</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-5.7020</td>
+<td class="r data">0.4154</td>
+<td class="r data">188.3797</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.6079</td>
+<td class="r data">0.0211</td>
+<td class="r data">833.9897</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.0686</td>
+<td class="r data">0.0635</td>
+<td class="r data">1.1649</td>
+<td class="r data">0.2804</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7775</td>
+<td class="r data">0.0611</td>
+<td class="r data">161.8765</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">1.6764</td>
+<td class="r data">0.0933</td>
+<td class="r data">323.1540</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">1.7428</td>
+<td class="r data">0.2297</td>
+<td class="r data">57.5659</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.0591</td>
+<td class="r data">0.0116</td>
+<td class="r data">25.9451</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.1134</td>
+<td class="r data">0.0384</td>
+<td class="r data">8.7002</td>
+<td class="r data">0.0032</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.4152</td>
+<td class="r data">0.0859</td>
+<td class="r data">23.3685</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0.1197</td>
+<td class="r data">0.0257</td>
+<td class="r data">21.6227</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX22" aria-label="优比">
+<h1 class="contentitem toc">优比</h1>
+<table class="table" style="border-spacing: 0" aria-label="优比">
+<caption aria-label="优比"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">优比估计</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">点估计</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/>置信限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1.837</td>
+<td class="r data">1.762</td>
+<td class="r data">1.914</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  0 vs 3</th>
+<td class="r data">10.143</td>
+<td class="r data">6.998</td>
+<td class="r data">14.704</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  1 vs 3</th>
+<td class="r data">23.639</td>
+<td class="r data">16.307</td>
+<td class="r data">34.268</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  2 vs 3</th>
+<td class="r data">58.080</td>
+<td class="r data">38.261</td>
+<td class="r data">88.165</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">5.713</td>
+<td class="r data">3.642</td>
+<td class="r data">8.962</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1.061</td>
+<td class="r data">1.037</td>
+<td class="r data">1.085</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB        0 vs 1</th>
+<td class="r data">0.797</td>
+<td class="r data">0.686</td>
+<td class="r data">0.927</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">0.660</td>
+<td class="r data">0.558</td>
+<td class="r data">0.781</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER       0 vs 1</th>
+<td class="r data">1.271</td>
+<td class="r data">1.149</td>
+<td class="r data">1.406</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX23" aria-label="关联统计量">
+<h1 class="contentitem toc">关联统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="关联统计量">
+<caption aria-label="关联统计量"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">预测概率和观测响应的关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">一致部分所占百分比</th>
+<td class="r data">80.8</td>
+<th class="rowheader" scope="row">Somers D</th>
+<td class="r data">0.617</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">不一致部分所占百分比</th>
+<td class="r data">19.2</td>
+<th class="rowheader" scope="row">Gamma</th>
+<td class="r data">0.617</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">结值百分比</th>
+<td class="r data">0.0</td>
+<th class="rowheader" scope="row">Tau-a</th>
+<td class="r data">0.273</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">对</th>
+<td class="r data">23033752</td>
+<th class="rowheader" scope="row">c</th>
+<td class="r data">0.808</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX24" aria-label="ROC 曲线">
+<h1 class="contentitem toc">ROC 曲线</h1>
+<div class="c">
+<img style="height: 480px; width: 480px" alt="“模型”的 ROC 曲线" src="data:image/png;base64,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"/>
+</div>
+</article>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX25" class="proc_title_group">
+<p class="c proctitle">FREQ 过程</p>
+</div>
+<h1 class="contentprocname toc">Freq 过程</h1>
+<section>
+<h1 class="contentfolder toc">表“I_TARGET-F_TARGET”</h1>
+<article aria-label="交叉表频数表">
+<h1 class="contentitem toc">交叉表频数表</h1>
+<table role="presentation">
+<tr>
+<td class="c t"><table class="table" style="border-spacing: 0">
+<colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="t header" scope="col">
+<div class="stacked-cell">
+<div class="t">频数</div>
+<div class="t">百分比</div>
+<div class="t">行百分比</div>
+<div class="t">列百分比</div>
+</div>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="table" style="border-spacing: 0" aria-label="交叉表频数表">
+<caption aria-label="交叉表频数表"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="4" scope="colgroup">F_TARGET-I_TARGET表</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">F_TARGET(从: TARGET)</th>
+<th class="c b header" colspan="3" scope="colgroup">I_TARGET(到: TARGET)</th>
+</tr>
+<tr>
+<th class="r header" scope="col">0</th>
+<th class="r header" scope="col">1</th>
+<th class="r header" scope="col">合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="t rowheader" scope="row">0</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">12933</div>
+<div class="r t">55.90</div>
+<div class="r t">84.04</div>
+<div class="r t">79.12</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">2456</div>
+<div class="r t">10.62</div>
+<div class="r t">15.96</div>
+<div class="r t">36.18</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">15389</div>
+<div class="r t">66.52</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">1</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">3413</div>
+<div class="r t">14.75</div>
+<div class="r t">44.06</div>
+<div class="r t">20.88</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">4333</div>
+<div class="r t">18.73</div>
+<div class="r t">55.94</div>
+<div class="r t">63.82</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">7746</div>
+<div class="r t">33.48</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">合计</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">16346</div>
+<div class="r t">70.65</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">6789</div>
+<div class="r t">29.35</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">23135</div>
+<div class="r t">100.00</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX26" class="proc_title_group">
+<p class="c proctitle">FREQ 过程</p>
+</div>
+<h1 class="contentprocname toc">Freq 过程</h1>
+<section>
+<h1 class="contentfolder toc">表“I_TARGET-F_TARGET”</h1>
+<article aria-label="交叉表频数表">
+<h1 class="contentitem toc">交叉表频数表</h1>
+<table role="presentation">
+<tr>
+<td class="c t"><table class="table" style="border-spacing: 0">
+<colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="t header" scope="col">
+<div class="stacked-cell">
+<div class="t">频数</div>
+<div class="t">百分比</div>
+<div class="t">行百分比</div>
+<div class="t">列百分比</div>
+</div>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+<td><table class="table" style="border-spacing: 0" aria-label="交叉表频数表">
+<caption aria-label="交叉表频数表"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="4" scope="colgroup">F_TARGET-I_TARGET表</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">F_TARGET(从: TARGET)</th>
+<th class="c b header" colspan="3" scope="colgroup">I_TARGET(到: TARGET)</th>
+</tr>
+<tr>
+<th class="r header" scope="col">0</th>
+<th class="r header" scope="col">1</th>
+<th class="r header" scope="col">合计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="t rowheader" scope="row">0</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">5840</div>
+<div class="r t">57.22</div>
+<div class="r t">85.39</div>
+<div class="r t">78.98</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">999</div>
+<div class="r t">9.79</div>
+<div class="r t">14.61</div>
+<div class="r t">35.51</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">6839</div>
+<div class="r t">67.00</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">1</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">1554</div>
+<div class="r t">15.22</div>
+<div class="r t">46.14</div>
+<div class="r t">21.02</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">1814</div>
+<div class="r t">17.77</div>
+<div class="r t">53.86</div>
+<div class="r t">64.49</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">3368</div>
+<div class="r t">33.00</div>
+<div class="r t">&#160;</div>
+<div class="r t">&#160;</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="t rowheader" scope="row">合计</th>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">7394</div>
+<div class="r t">72.44</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">2813</div>
+<div class="r t">27.56</div>
+</div>
+</td>
+<td class="r t data">
+<div class="stacked-cell">
+<div class="r t">10207</div>
+<div class="r t">100.00</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Logistic" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX27" class="proc_title_group">
+<p class="c proctitle">“LOGISTIC”过程</p>
+</div>
+<h1 class="contentprocname toc">Logistic 过程</h1>
+<article aria-label="模型信息">
+<h1 class="contentitem toc">模型信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="模型信息">
+<caption aria-label="模型信息"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">模型信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集</th>
+<td class="data">WORK.TRAIN_STD</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应变量</th>
+<td class="data">TARGET</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">响应水平数</th>
+<td class="data">2</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">模型</th>
+<td class="data">二元 Logit</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">优化方法</th>
+<td class="data">Fisher 评分法</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX28" aria-label="观测汇总">
+<h1 class="contentitem toc">观测汇总</h1>
+<table class="table" style="border-spacing: 0" aria-label="观测汇总">
+<caption aria-label="观测汇总"></caption>
+<colgroup><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">读取的观测数</th>
+<td class="r data">23135</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">使用的观测数</th>
+<td class="r data">23135</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX29" aria-label="响应概略">
+<h1 class="contentitem toc">响应概略</h1>
+<table class="table" style="border-spacing: 0" aria-label="响应概略">
+<caption aria-label="响应概略"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">响应概略</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">有序<br/>值</th>
+<th class="b header" scope="col">TARGET</th>
+<th class="r b header" scope="col">总<br/>频数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">0</td>
+<td class="r data">15389</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">1</td>
+<td class="r data">7746</td>
+</tr>
+</tbody>
+</table>
+<div class="proc_note_group">
+<p class="c proctitle">建模的概率为 TARGET=&apos;1&apos;。</p>
+</div>
+</article>
+<article id="IDX30" aria-label="分类水平信息">
+<h1 class="contentitem toc">分类水平信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="分类水平信息">
+<caption aria-label="分类水平信息"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">分类水平信息</th>
+</tr>
+<tr>
+<th class="b header" scope="col">分类</th>
+<th class="b header" scope="col">值</th>
+<th class="c b header" colspan="3" scope="colgroup">设计变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">3</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data" style="white-space: nowrap">-1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data" style="white-space: nowrap">-1</td>
+<td class="r data">&#160;</td>
+<td class="r data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX31" aria-label="收敛状态">
+<h1 class="contentitem toc">收敛状态</h1>
+<table class="table" style="border-spacing: 0" aria-label="收敛状态">
+<caption aria-label="收敛状态"></caption>
+<colgroup><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">模型收敛状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">满足收敛准则 (GCONV=1E-8)。</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX32" aria-label="拟合统计量">
+<h1 class="contentitem toc">拟合统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="拟合统计量">
+<caption aria-label="拟合统计量"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">模型拟合统计量</th>
+</tr>
+<tr>
+<th class="b header" scope="col">准则</th>
+<th class="r b header" scope="col">仅截距</th>
+<th class="r b header" scope="col">截距和协变量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AIC</th>
+<td class="r data">29500.878</td>
+<td class="r data">22951.420</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">SC</th>
+<td class="r data">29508.927</td>
+<td class="r data">23031.911</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">-2 Log L</th>
+<td class="r data">29498.878</td>
+<td class="r data">22931.420</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX33" aria-label="全局检验">
+<h1 class="contentitem toc">全局检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="全局检验">
+<caption aria-label="全局检验"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">检验全局原假设: BETA=0</th>
+</tr>
+<tr>
+<th class="b header" scope="col">检验</th>
+<th class="r b header" scope="col">卡方</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">似然比</th>
+<td class="r data">6567.4575</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">评分</th>
+<td class="r data">5140.4298</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Wald</th>
+<td class="r data">3552.4322</td>
+<td class="r data">9</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX34" aria-label="3 型检验">
+<h1 class="contentitem toc">3 型检验</h1>
+<table class="table" style="border-spacing: 0" aria-label="3 型检验">
+<caption aria-label="3 型检验"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">3 型效应分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1</td>
+<td class="r data">1865.4159</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<td class="r data">3</td>
+<td class="r data">1200.1550</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">1</td>
+<td class="r data">172.2645</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1</td>
+<td class="r data">40.9807</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<td class="r data">1</td>
+<td class="r data">22.7960</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">1</td>
+<td class="r data">41.4935</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<td class="r data">1</td>
+<td class="r data">34.9795</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX35" aria-label="参数估计">
+<h1 class="contentitem toc">参数估计</h1>
+<table class="table" style="border-spacing: 0" aria-label="参数估计">
+<caption aria-label="参数估计"></caption>
+<colgroup><col/><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">最大似然估计分析</th>
+</tr>
+<tr>
+<th class="b header" scope="col">参数</th>
+<th class="b header" scope="col"> &#160;</th>
+<th class="r b header" scope="col">自由度</th>
+<th class="r b header" scope="col">估计</th>
+<th class="r b header" scope="col">标准<br/>误差</th>
+<th class="r b header" scope="col">Wald<br/>卡方</th>
+<th class="r b header" scope="col">Pr&#160;&gt;&#160;卡方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">Intercept</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-6.2444</td>
+<td class="r data">0.2781</td>
+<td class="r data">504.2377</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.5920</td>
+<td class="r data">0.0137</td>
+<td class="r data">1865.4159</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0.0387</td>
+<td class="r data">0.0455</td>
+<td class="r data">0.7225</td>
+<td class="r data">0.3953</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7974</td>
+<td class="r data">0.0439</td>
+<td class="r data">329.5257</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">1.8158</td>
+<td class="r data">0.0644</td>
+<td class="r data">795.7958</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">2.0311</td>
+<td class="r data">0.1548</td>
+<td class="r data">172.2645</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data">0.0480</td>
+<td class="r data">0.00750</td>
+<td class="r data">40.9807</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.1222</td>
+<td class="r data">0.0256</td>
+<td class="r data">22.7960</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">1</td>
+<td class="r data" style="white-space: nowrap">-0.3675</td>
+<td class="r data">0.0570</td>
+<td class="r data">41.4935</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<th class="rowheader" scope="row">0</th>
+<td class="r data">1</td>
+<td class="r data">0.1005</td>
+<td class="r data">0.0170</td>
+<td class="r data">34.9795</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX36" aria-label="优比">
+<h1 class="contentitem toc">优比</h1>
+<table class="table" style="border-spacing: 0" aria-label="优比">
+<caption aria-label="优比"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">优比估计</th>
+</tr>
+<tr>
+<th class="b header" scope="col">效应</th>
+<th class="r b header" scope="col">点估计</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/>置信限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">1.808</td>
+<td class="r data">1.760</td>
+<td class="r data">1.857</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  0 vs 3</th>
+<td class="r data">14.740</td>
+<td class="r data">11.138</td>
+<td class="r data">19.508</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  1 vs 3</th>
+<td class="r data">31.480</td>
+<td class="r data">23.790</td>
+<td class="r data">41.655</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE  2 vs 3</th>
+<td class="r data">87.155</td>
+<td class="r data">64.067</td>
+<td class="r data">118.563</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">7.622</td>
+<td class="r data">5.628</td>
+<td class="r data">10.323</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">1.049</td>
+<td class="r data">1.034</td>
+<td class="r data">1.065</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB        0 vs 1</th>
+<td class="r data">0.783</td>
+<td class="r data">0.708</td>
+<td class="r data">0.866</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">0.692</td>
+<td class="r data">0.619</td>
+<td class="r data">0.774</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER       0 vs 1</th>
+<td class="r data">1.223</td>
+<td class="r data">1.144</td>
+<td class="r data">1.307</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX37" aria-label="关联统计量">
+<h1 class="contentitem toc">关联统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="关联统计量">
+<caption aria-label="关联统计量"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">预测概率和观测响应的关联</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">一致部分所占百分比</th>
+<td class="r data">80.7</td>
+<th class="rowheader" scope="row">Somers D</th>
+<td class="r data">0.615</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">不一致部分所占百分比</th>
+<td class="r data">19.3</td>
+<th class="rowheader" scope="row">Gamma</th>
+<td class="r data">0.615</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">结值百分比</th>
+<td class="r data">0.0</td>
+<th class="rowheader" scope="row">Tau-a</th>
+<td class="r data">0.274</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">对</th>
+<td class="r data">119203194</td>
+<th class="rowheader" scope="row">c</th>
+<td class="r data">0.807</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

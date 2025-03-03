@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html class="ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f" lang="zh" xml:lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>结果: 程序 1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c section > table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c section > pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c div > table,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c div > pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c article > table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c article > pre,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j section > table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j section > pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j div > table,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j div > pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j article > table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j article > pre,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c p.note, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c p.fatal,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j p.note, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j p.fatal,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.c > table.layoutcontainer, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l p.note,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.l p.fatal { margin-left: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c p.note,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r p.note,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r table, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r pre, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r p.note,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion.r p.fatal { margin-right: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f article, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f aside, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f details, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f figcaption, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f figure, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f footer, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f header, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f hgroup, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f nav, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f section { display: block }
+html.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f { font-size: 100% }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f ul, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f dd { margin: 0 0 0 40px }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f nav ul, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f img { border: 0; vertical-align: middle }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f svg:not(:root) { overflow: hidden }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f figure { margin: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f table { border-collapse: collapse; border-spacing: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p { margin-top: 0; text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h1.heading1 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h2.heading2 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h3.heading3 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h4.heading4 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h5.heading5 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f h6.heading6 { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f span { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f table { margin-bottom: 1em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f td, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f td[class$="fixed"], .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f th[class$="fixed"] { white-space: pre }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f section, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f article { padding-top: 1px; padding-bottom: 8px }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .stacked-value { text-align: left; display: block }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .stacked-cell > .stacked-value, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f td.data > td.data, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f th.data > td.data, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f th.data > th.data, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f td.data > th.data, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f th.header > th.header { border: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .stacked-cell > div.data { border-width: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > p { margin: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch { display: table }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .toc { display: none }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .proc_note_group, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .proc_title_group { margin-bottom: 1em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p.proctitle { margin: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p.note, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p.warning, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p.error, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f p.fatal { display: table }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notebanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warnbanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorbanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalbanner,
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notecontent, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warncontent, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorcontent, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notebanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warnbanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorbanner, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalbanner { padding-right: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body > div > ol li { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .c { text-align: center }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .r { text-align: right }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .l { text-align: left }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .j { text-align: justify }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .d { text-align: right }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .b { vertical-align: bottom }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .m { vertical-align: middle }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .t { vertical-align: top }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f a:active { color: #800080 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch { border: hidden; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bycontentfolder {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > colgroup > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > colgroup, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > * > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer > tfoot { border: none; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .cell, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contentfolder, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contentitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contentproclabel, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .data, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .folderaction {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph { border: hidden; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading1, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading2, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading3, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading4, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading5, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .heading6 { font-family: MYingHei_18030_C-Medium, Helvetica, sans-serif }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .indexaction, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .indexitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutcontainer, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f a:link { color: #0000ff }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list3, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list4, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list5, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list6, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list7, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list8, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem3, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem4, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem5, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem6, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem7, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem8, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output { border: hidden; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pagesitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pagesproclabel, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > colgroup > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > colgroup, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > * > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip > tfoot { border: none; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter10, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter2, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter3, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter4, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter5, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter6, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter7, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter8, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle10, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle2, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle3, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle4, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle5, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle6, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle7, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle8, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > colgroup > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > colgroup, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > * > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer > tfoot { border: none; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table { border: hidden; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > colgroup > col, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > colgroup, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > * > tr, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > thead, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > tbody, .ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer > tfoot { border: none; }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f a:visited { color: #800080 }
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_65d8cd69-aff3-4b07-b723-3b1b565bdb7f .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_65d8cd69-aff3-4b07-b723-3b1b565bdb7f" class="c body">
+<h1 class="body toc">结果: 程序 1.sas</h1>
+<section data-name="Contents" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">CONTENTS PROCEDURE</p>
+</div>
+<h1 class="contentprocname toc">Contents 过程</h1>
+<section>
+<h1 class="contentfolder toc">WORK.FIN_TRAIN_REC</h1>
+<article aria-label="属性">
+<h1 class="contentitem toc">属性</h1>
+<table class="table" style="border-spacing: 0" aria-label="属性">
+<caption aria-label="属性"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集名</th>
+<td class="data">WORK.FIN_TRAIN_REC</td>
+<th class="rowheader" scope="row">观测</th>
+<td class="data">23135</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">成员类型</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">变量</th>
+<td class="data">55</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">引擎</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">索引</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建时间</th>
+<td class="data">2024-04-18 11:59:18</td>
+<th class="rowheader" scope="row">观测长度</th>
+<td class="data">440</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">上次修改时间</th>
+<td class="data">2024-04-18 11:59:18</td>
+<th class="rowheader" scope="row">删除的观测</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">保护</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">已压缩</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集类型</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">已排序</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">标签</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据表示法</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">编码</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX1" aria-label="引擎/主机信息">
+<h1 class="contentitem toc">引擎/主机信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="引擎/主机信息">
+<caption aria-label="引擎/主机信息"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">引擎/主机相关信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集页面大小</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集页数</th>
+<td class="data">78</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">首数据页</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">每页最大观测数</th>
+<td class="data">297</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">首数据页的观测数</th>
+<td class="data">277</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集修复数</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件名</th>
+<td class="data">/saswork/SAS_workA2300000309E_odaws02-apse1.oda.sas.com/SAS_workEA670000309E_odaws02-apse1.oda.sas.com/fin_train_rec.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建版本</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建主机</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode 号</th>
+<td class="data">1074827504</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">访问权限</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">所有者名</th>
+<td class="data">u63802491</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件大小</th>
+<td class="data">10MB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件大小（字节）</th>
+<td class="data">10354688</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="变量">
+<h1 class="contentitem toc">变量</h1>
+<table class="table" style="border-spacing: 0" aria-label="变量">
+<caption aria-label="变量"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">按字母排序的变量和特性列表</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">变量</th>
+<th class="b header" scope="col">类型</th>
+<th class="r b header" scope="col">长度</th>
+<th class="b header" scope="col">输出格式</th>
+<th class="b header" scope="col">输入格式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">AGE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">AUM_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">AUM_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">A_L_FIANCE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="data">CHANNEL_PRE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">CHANNEL_PRE_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">CHILDREN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">CUST_ID</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">C_1W_TR_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">C_1W_TR_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">C_FIANCE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">C_FIANCE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">C_FIANCE_3_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">DEBIT_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">DEBIT_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">DEPOSIT_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">DEPOSIT_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">DOB</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">DT_L_FINACE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">YYMMDD10.</td>
+<td class="data">YYMMDD10.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">FINACE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">FINACE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">FIX_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">FIX_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">FUND_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">FUND_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">F_CC</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">F_CC_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">F_CLOAN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">F_CLOAN_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">F_FUND</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">F_FUND_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">F_HLOAN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">F_HLOAN_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">F_MOBILE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">F_MOBILE_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">F_PAYROLL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">F_PAYROLL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">F_STAFF</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">F_STAFF_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">F_TEL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">F_TEL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">F_VIP</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">F_VIP_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">F_WEB</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">F_WEB_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="data">F_YJL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">F_YJL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="data">F_YLJ</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">F_YLJ_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">GAP_FIANCE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">GAP_FINACE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">GAP_FINACE_3_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="data">GENDER</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">GENDER_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">TARGET</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+<section data-name="Contents" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX3" class="proc_title_group">
+<p class="c proctitle">CONTENTS PROCEDURE</p>
+</div>
+<h1 class="contentprocname toc">Contents 过程</h1>
+<section>
+<h1 class="contentfolder toc">WORK.FIN_VALID_REC</h1>
+<article aria-label="属性">
+<h1 class="contentitem toc">属性</h1>
+<table class="table" style="border-spacing: 0" aria-label="属性">
+<caption aria-label="属性"></caption>
+<colgroup><col/><col/><col/><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集名</th>
+<td class="data">WORK.FIN_VALID_REC</td>
+<th class="rowheader" scope="row">观测</th>
+<td class="data">10207</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">成员类型</th>
+<td class="data">DATA</td>
+<th class="rowheader" scope="row">变量</th>
+<td class="data">55</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">引擎</th>
+<td class="data">V9</td>
+<th class="rowheader" scope="row">索引</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建时间</th>
+<td class="data">2024-04-18 11:59:18</td>
+<th class="rowheader" scope="row">观测长度</th>
+<td class="data">440</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">上次修改时间</th>
+<td class="data">2024-04-18 11:59:18</td>
+<th class="rowheader" scope="row">删除的观测</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">保护</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">已压缩</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集类型</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">已排序</th>
+<td class="data">NO</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">标签</th>
+<td class="data">&#160;</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据表示法</th>
+<td class="data">SOLARIS_X86_64, LINUX_X86_64, ALPHA_TRU64, LINUX_IA64</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">编码</th>
+<td class="data">utf-8  Unicode (UTF-8)</td>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="data">&#160;</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX4" aria-label="引擎/主机信息">
+<h1 class="contentitem toc">引擎/主机信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="引擎/主机信息">
+<caption aria-label="引擎/主机信息"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">引擎/主机相关信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">数据集页面大小</th>
+<td class="data">131072</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集页数</th>
+<td class="data">35</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">首数据页</th>
+<td class="data">1</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">每页最大观测数</th>
+<td class="data">297</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">首数据页的观测数</th>
+<td class="data">277</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">数据集修复数</th>
+<td class="data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件名</th>
+<td class="data">/saswork/SAS_workA2300000309E_odaws02-apse1.oda.sas.com/SAS_workEA670000309E_odaws02-apse1.oda.sas.com/fin_valid_rec.sas7bdat</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建版本</th>
+<td class="data">9.0401M7</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">创建主机</th>
+<td class="data">Linux</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">Inode 号</th>
+<td class="data">1074827534</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">访问权限</th>
+<td class="data">rw-r--r--</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">所有者名</th>
+<td class="data">u63802491</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件大小</th>
+<td class="data">5MB</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">文件大小（字节）</th>
+<td class="data">4718592</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="变量">
+<h1 class="contentitem toc">变量</h1>
+<table class="table" style="border-spacing: 0" aria-label="变量">
+<caption aria-label="变量"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">按字母排序的变量和特性列表</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">#</th>
+<th class="b header" scope="col">变量</th>
+<th class="b header" scope="col">类型</th>
+<th class="r b header" scope="col">长度</th>
+<th class="b header" scope="col">输出格式</th>
+<th class="b header" scope="col">输入格式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">AGE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">AUM_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">AUM_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="data">A_L_FIANCE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="data">CHANNEL_PRE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="data">CHANNEL_PRE_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">CHILDREN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">CUST_ID</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="data">C_1W_TR_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="data">C_1W_TR_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="data">C_FIANCE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="data">C_FIANCE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="data">C_FIANCE_3_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">DEBIT_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">DEBIT_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="data">DEPOSIT_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="data">DEPOSIT_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">DOB</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="data">DT_L_FINACE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">YYMMDD10.</td>
+<td class="data">YYMMDD10.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="data">FINACE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="data">FINACE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="data">FIX_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="data">FIX_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">FUND_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">FUND_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="data">F_CC</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="data">F_CC_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="data">F_CLOAN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="data">F_CLOAN_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="data">F_FUND</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="data">F_FUND_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="data">F_HLOAN</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="data">F_HLOAN_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="data">F_MOBILE</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="data">F_MOBILE_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="data">F_PAYROLL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="data">F_PAYROLL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="data">F_STAFF</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="data">F_STAFF_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="data">F_TEL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="data">F_TEL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="data">F_VIP</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="data">F_VIP_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="data">F_WEB</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="data">F_WEB_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="data">F_YJL</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="data">F_YJL_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="data">F_YLJ</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="data">F_YLJ_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="data">GAP_FIANCE_6</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="data">GAP_FINACE_3</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="data">GAP_FINACE_3_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="data">GENDER</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="data">GENDER_n</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">&#160;</td>
+<td class="data">&#160;</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="data">TARGET</td>
+<td class="data">数值</td>
+<td class="r data">8</td>
+<td class="data">BEST12.</td>
+<td class="data">BEST32.</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+</div>
+</body>
+</html>

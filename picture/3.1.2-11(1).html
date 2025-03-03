@@ -1,0 +1,7551 @@
+<!DOCTYPE html>
+<html class="ods_6fa0167e-e67f-4a58-a861-2ce73481db6f" lang="zh" xml:lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>结果: 程序 1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c section > table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c section > pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c div > table,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c div > pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c article > table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c article > pre,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j section > table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j section > pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j div > table,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j div > pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j article > table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j article > pre,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c p.note, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c p.fatal,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j p.note, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j p.fatal,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.c > table.layoutcontainer, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l p.note,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.l p.fatal { margin-left: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c p.note,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r p.note,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r table, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r pre, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r p.note,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion.r p.fatal { margin-right: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f article, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f aside, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f details, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f figcaption, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f figure, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f footer, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f header, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f hgroup, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f nav, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f section { display: block }
+html.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f { font-size: 100% }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f ul, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f dd { margin: 0 0 0 40px }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f nav ul, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f img { border: 0; vertical-align: middle }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f svg:not(:root) { overflow: hidden }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f figure { margin: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f table { border-collapse: collapse; border-spacing: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p { margin-top: 0; text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h1.heading1 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h2.heading2 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h3.heading3 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h4.heading4 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h5.heading5 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f h6.heading6 { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f span { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f table { margin-bottom: 1em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f td, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f td[class$="fixed"], .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f th[class$="fixed"] { white-space: pre }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f section, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f article { padding-top: 1px; padding-bottom: 8px }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .stacked-value { text-align: left; display: block }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .stacked-cell > .stacked-value, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f td.data > td.data, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f th.data > td.data, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f th.data > th.data, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f td.data > th.data, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f th.header > th.header { border: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .stacked-cell > div.data { border-width: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > p { margin: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch { display: table }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .toc { display: none }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .proc_note_group, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .proc_title_group { margin-bottom: 1em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p.proctitle { margin: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p.note, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p.warning, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p.error, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f p.fatal { display: table }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notebanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warnbanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorbanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalbanner,
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notecontent, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warncontent, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorcontent, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notebanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warnbanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorbanner, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalbanner { padding-right: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body > div > ol li { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .c { text-align: center }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .r { text-align: right }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .l { text-align: left }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .j { text-align: justify }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .d { text-align: right }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .b { vertical-align: bottom }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .m { vertical-align: middle }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .t { vertical-align: top }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f a:active { color: #800080 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch { border: hidden; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bycontentfolder {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > colgroup > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > colgroup, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > * > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer > tfoot { border: none; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .cell, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contentfolder, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contentitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contentproclabel, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .data, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .folderaction {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph { border: hidden; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading1, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading2, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading3, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading4, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading5, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .heading6 { font-family: MYingHei_18030_C-Medium, Helvetica, sans-serif }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .indexaction, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .indexitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutcontainer, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f a:link { color: #0000ff }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list3, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list4, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list5, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list6, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list7, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list8, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem3, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem4, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem5, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem6, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem7, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem8, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output { border: hidden; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pagesitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pagesproclabel, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > colgroup > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > colgroup, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > * > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip > tfoot { border: none; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter10, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter2, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter3, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter4, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter5, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter6, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter7, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter8, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle10, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle2, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle3, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle4, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle5, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle6, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle7, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle8, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > colgroup > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > colgroup, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > * > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer > tfoot { border: none; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table { border: hidden; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > colgroup > col, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > colgroup, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > * > tr, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > thead, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > tbody, .ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer > tfoot { border: none; }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f a:visited { color: #800080 }
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_6fa0167e-e67f-4a58-a861-2ce73481db6f .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_6fa0167e-e67f-4a58-a861-2ce73481db6f" class="c body">
+<h1 class="body toc">结果: 程序 1.sas</h1>
+<section data-name="Corr" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">CORR 过程</p>
+</div>
+<h1 class="contentprocname toc">Corr 过程</h1>
+<article aria-label="变量信息">
+<h1 class="contentitem toc">变量信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="变量信息">
+<caption aria-label="变量信息"></caption>
+<colgroup><col/></colgroup><colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">23 With 变量:</th>
+<td class="data">C_1W_TR_3    FIX_3        FIX_6        FINACE_3     C_FIANCE_6   GAP_FIANCE_6 FINACE_6     C_1W_TR_6    A_L_FIANCE   DT_L_FINACE  DEPOSIT_3    DEPOSIT_6    AGE          AUM_3        DEBIT_3      DEBIT_6      FUND_3       AUM_6        FUND_6       CHILDREN     DOB          C_FIANCE_3   GAP_FINACE_3</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">15      变量:</th>
+<td class="data">TARGET       F_CC         F_CLOAN      F_FUND       F_HLOAN      F_MOBILE     F_PAYROLL    F_STAFF      F_TEL        F_VIP        F_WEB        F_YJL        F_YLJ        CHANNEL_PRE  GENDER</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX1" aria-label="简单统计量">
+<h1 class="contentitem toc">简单统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="简单统计量">
+<caption aria-label="简单统计量"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">简单统计量</th>
+</tr>
+<tr>
+<th class="b header" scope="col">变量</th>
+<th class="r b header" scope="col">数目</th>
+<th class="r b header" scope="col">均值</th>
+<th class="r b header" scope="col">标准差</th>
+<th class="r b header" scope="col">中位数</th>
+<th class="r b header" scope="col">最小值</th>
+<th class="r b header" scope="col">最大值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_3</th>
+<td class="r data">23135</td>
+<td class="r data">1.01158</td>
+<td class="r data">0.06830</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.41421</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_3</th>
+<td class="r data">23135</td>
+<td class="r data">4.83463</td>
+<td class="r data">0.25418</td>
+<td class="r data">4.84510</td>
+<td class="r data">3.67293</td>
+<td class="r data">5.69897</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_6</th>
+<td class="r data">23135</td>
+<td class="r data">4.76706</td>
+<td class="r data">0.28553</td>
+<td class="r data">4.77815</td>
+<td class="r data">3.45288</td>
+<td class="r data">5.69967</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_3</th>
+<td class="r data">23135</td>
+<td class="r data">4.87416</td>
+<td class="r data">0.24712</td>
+<td class="r data">4.87347</td>
+<td class="r data">3.85387</td>
+<td class="r data">5.84605</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_6</th>
+<td class="r data">23135</td>
+<td class="r data">1.50580</td>
+<td class="r data">0.53173</td>
+<td class="r data">1.41421</td>
+<td class="r data">1.00000</td>
+<td class="r data">4.79583</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">23135</td>
+<td class="r data">9.55355</td>
+<td class="r data">1.97575</td>
+<td class="r data">9.53939</td>
+<td class="r data">2.64575</td>
+<td class="r data">13.52775</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_6</th>
+<td class="r data">23135</td>
+<td class="r data">4.84972</td>
+<td class="r data">0.28921</td>
+<td class="r data">4.84272</td>
+<td class="r data">3.83792</td>
+<td class="r data">5.91739</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_6</th>
+<td class="r data">23135</td>
+<td class="r data">1.03362</td>
+<td class="r data">0.12596</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.73205</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">A_L_FIANCE</th>
+<td class="r data">23135</td>
+<td class="r data">5.04735</td>
+<td class="r data">0.33251</td>
+<td class="r data">5.00000</td>
+<td class="r data">4.68305</td>
+<td class="r data">6.07918</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DT_L_FINACE</th>
+<td class="r data">23135</td>
+<td class="r data">4.30101</td>
+<td class="r data">0.01477</td>
+<td class="r data">4.30473</td>
+<td class="r data">4.24881</td>
+<td class="r data">4.31454</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_3</th>
+<td class="r data">23135</td>
+<td class="r data">3.60717</td>
+<td class="r data">1.45505</td>
+<td class="r data">3.97166</td>
+<td class="r data" style="white-space: nowrap">-0.74473</td>
+<td class="r data">5.79560</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_6</th>
+<td class="r data">23135</td>
+<td class="r data">3.68694</td>
+<td class="r data">1.38115</td>
+<td class="r data">4.03599</td>
+<td class="r data" style="white-space: nowrap">-0.60206</td>
+<td class="r data">5.77832</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">23135</td>
+<td class="r data">1.73529</td>
+<td class="r data">0.12467</td>
+<td class="r data">1.77085</td>
+<td class="r data">1.38021</td>
+<td class="r data">1.93952</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_3</th>
+<td class="r data">23135</td>
+<td class="r data">3.73854</td>
+<td class="r data">1.80477</td>
+<td class="r data">4.34623</td>
+<td class="r data" style="white-space: nowrap">-3.22185</td>
+<td class="r data">6.18215</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_3</th>
+<td class="r data">23135</td>
+<td class="r data">0.23722</td>
+<td class="r data">1.06900</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">5.54407</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_6</th>
+<td class="r data">23135</td>
+<td class="r data">0.23270</td>
+<td class="r data">1.04815</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">5.42597</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_3</th>
+<td class="r data">23135</td>
+<td class="r data">0.36976</td>
+<td class="r data">1.24616</td>
+<td class="r data">0</td>
+<td class="r data" style="white-space: nowrap">-3.22185</td>
+<td class="r data">5.50906</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">23135</td>
+<td class="r data">3.62251</td>
+<td class="r data">1.76966</td>
+<td class="r data">4.23628</td>
+<td class="r data" style="white-space: nowrap">-4.00000</td>
+<td class="r data">6.01370</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_6</th>
+<td class="r data">23135</td>
+<td class="r data">0.36386</td>
+<td class="r data">1.21059</td>
+<td class="r data">0</td>
+<td class="r data" style="white-space: nowrap">-3.52288</td>
+<td class="r data">5.35951</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHILDREN</th>
+<td class="r data">23135</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">23135</td>
+<td class="r data">3.43618</td>
+<td class="r data">0.31427</td>
+<td class="r data">3.53466</td>
+<td class="r data">2.49554</td>
+<td class="r data">3.77371</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_3</th>
+<td class="r data">23135</td>
+<td class="r data">1.04509</td>
+<td class="r data">0.18985</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.00000</td>
+<td class="r data">2.23607</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FINACE_3</th>
+<td class="r data">23135</td>
+<td class="r data">2.91470</td>
+<td class="r data">0.33541</td>
+<td class="r data">3.00000</td>
+<td class="r data">1.00000</td>
+<td class="r data">3.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">TARGET</th>
+<td class="r data">23135</td>
+<td class="r data">0.33482</td>
+<td class="r data">0.47194</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_CC</th>
+<td class="r data">23135</td>
+<td class="r data">0.22356</td>
+<td class="r data">0.41664</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_CLOAN</th>
+<td class="r data">23135</td>
+<td class="r data">0.00830</td>
+<td class="r data">0.09072</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_FUND</th>
+<td class="r data">23135</td>
+<td class="r data">0.08061</td>
+<td class="r data">0.27225</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_HLOAN</th>
+<td class="r data">23135</td>
+<td class="r data">0.02572</td>
+<td class="r data">0.15830</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_MOBILE</th>
+<td class="r data">23135</td>
+<td class="r data">0.19334</td>
+<td class="r data">0.39493</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_PAYROLL</th>
+<td class="r data">23135</td>
+<td class="r data">0.13486</td>
+<td class="r data">0.34158</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_STAFF</th>
+<td class="r data">23135</td>
+<td class="r data">0.00916</td>
+<td class="r data">0.09529</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_TEL</th>
+<td class="r data">23135</td>
+<td class="r data">0.43359</td>
+<td class="r data">0.49558</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_VIP</th>
+<td class="r data">23135</td>
+<td class="r data">0.44236</td>
+<td class="r data">0.49668</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_WEB</th>
+<td class="r data">23135</td>
+<td class="r data">0.78842</td>
+<td class="r data">0.40844</td>
+<td class="r data">1.00000</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_YJL</th>
+<td class="r data">21802</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">F_YLJ</th>
+<td class="r data">23135</td>
+<td class="r data">0.34510</td>
+<td class="r data">0.47541</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHANNEL_PRE</th>
+<td class="r data">23135</td>
+<td class="r data">0.87586</td>
+<td class="r data">0.96770</td>
+<td class="r data">1.00000</td>
+<td class="r data">0</td>
+<td class="r data">3.00000</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GENDER</th>
+<td class="r data">23135</td>
+<td class="r data">0.37662</td>
+<td class="r data">0.48455</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1.00000</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX2" aria-label="Spearman 相关">
+<h1 class="contentitem toc">Spearman 相关</h1>
+<table class="table" style="border-spacing: 0" aria-label="Spearman 相关">
+<caption aria-label="Spearman 相关"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="16" scope="colgroup">Spearman 相关系数<br/>Prob &gt; |r|, H0: Rho=0<br/>观测数</th>
+</tr>
+<tr>
+<th class="c headerempty" scope="col">&#160;</th>
+<th class="r b header" scope="col">TARGET</th>
+<th class="r b header" scope="col">F_CC</th>
+<th class="r b header" scope="col">F_CLOAN</th>
+<th class="r b header" scope="col">F_FUND</th>
+<th class="r b header" scope="col">F_HLOAN</th>
+<th class="r b header" scope="col">F_MOBILE</th>
+<th class="r b header" scope="col">F_PAYROLL</th>
+<th class="r b header" scope="col">F_STAFF</th>
+<th class="r b header" scope="col">F_TEL</th>
+<th class="r b header" scope="col">F_VIP</th>
+<th class="r b header" scope="col">F_WEB</th>
+<th class="r b header" scope="col">F_YJL</th>
+<th class="r b header" scope="col">F_YLJ</th>
+<th class="r b header" scope="col">CHANNEL_PRE</th>
+<th class="r b header" scope="col">GENDER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05298</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11790</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15498</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08555</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05194</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10748</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11723</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.29734</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05580</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13344</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06861</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03128</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03723</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00415</div>
+<div class="r">0.5279</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01824</div>
+<div class="r">0.0055</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02358</div>
+<div class="r">0.0003</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02121</div>
+<div class="r">0.0013</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01615</div>
+<div class="r">0.0140</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00611</div>
+<div class="r">0.3526</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02906</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00847</div>
+<div class="r">0.1976</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03822</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00858</div>
+<div class="r">0.1921</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10683</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04133</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01391</div>
+<div class="r">0.0344</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03495</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00179</div>
+<div class="r">0.7858</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02259</div>
+<div class="r">0.0006</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02709</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02011</div>
+<div class="r">0.0022</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01830</div>
+<div class="r">0.0054</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01208</div>
+<div class="r">0.0662</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03655</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01519</div>
+<div class="r">0.0209</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03898</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00607</div>
+<div class="r">0.3559</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10036</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04503</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02819</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04410</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00212</div>
+<div class="r">0.7471</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01828</div>
+<div class="r">0.0054</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01370</div>
+<div class="r">0.0371</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00920</div>
+<div class="r">0.1617</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00608</div>
+<div class="r">0.3551</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00357</div>
+<div class="r">0.5867</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01142</div>
+<div class="r">0.0825</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01929</div>
+<div class="r">0.0034</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01175</div>
+<div class="r">0.0738</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02378</div>
+<div class="r">0.0003</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16942</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01667</div>
+<div class="r">0.0112</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03099</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00414</div>
+<div class="r">0.5293</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00963</div>
+<div class="r">0.1428</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02262</div>
+<div class="r">0.0006</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08817</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04509</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05999</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01263</div>
+<div class="r">0.0548</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10922</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01601</div>
+<div class="r">0.0149</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06778</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04455</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.17834</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05391</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06916</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07863</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00667</div>
+<div class="r">0.3101</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02262</div>
+<div class="r">0.0006</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08817</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04509</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05999</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01263</div>
+<div class="r">0.0548</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.10922</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01602</div>
+<div class="r">0.0149</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06778</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04455</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.17834</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05391</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06916</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07863</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00667</div>
+<div class="r">0.3101</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04265</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01493</div>
+<div class="r">0.0231</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00942</div>
+<div class="r">0.1520</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02340</div>
+<div class="r">0.0004</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00921</div>
+<div class="r">0.1613</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00158</div>
+<div class="r">0.8099</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02358</div>
+<div class="r">0.0003</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01969</div>
+<div class="r">0.0028</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02330</div>
+<div class="r">0.0004</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20643</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00982</div>
+<div class="r">0.1351</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02791</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00838</div>
+<div class="r">0.2025</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01245</div>
+<div class="r">0.0583</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09055</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.14139</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.14880</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10213</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04144</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12576</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13242</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.27380</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07271</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18011</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10442</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09265</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05061</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00587</div>
+<div class="r">0.3718</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">A_L_FIANCE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01354</div>
+<div class="r">0.0395</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04690</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01328</div>
+<div class="r">0.0434</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00948</div>
+<div class="r">0.1493</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03096</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01554</div>
+<div class="r">0.0181</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01204</div>
+<div class="r">0.0670</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00453</div>
+<div class="r">0.4911</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05358</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.38266</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06674</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08522</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01096</div>
+<div class="r">0.0954</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03718</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DT_L_FINACE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.79740</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05978</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00754</div>
+<div class="r">0.2515</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09744</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02760</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12402</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05111</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00069</div>
+<div class="r">0.9169</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05419</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08739</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.28342</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11143</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.35685</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06347</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.33703</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06138</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02996</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07485</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00316</div>
+<div class="r">0.6309</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01273</div>
+<div class="r">0.0528</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10900</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05471</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02760</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05903</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08751</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.32483</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02935</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05451</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.32616</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06380</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02927</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07742</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00084</div>
+<div class="r">0.8980</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02121</div>
+<div class="r">0.0013</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10608</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05003</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03486</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07848</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09458</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.31975</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03665</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05563</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08215</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.18652</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08682</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00614</div>
+<div class="r">0.3501</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09727</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.28643</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.11585</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12657</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05429</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.11298</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.19886</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.46836</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.23175</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12168</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.40507</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09607</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03436</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24117</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00247</div>
+<div class="r">0.7070</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07472</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11785</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05527</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07817</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.21177</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18082</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.30185</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04237</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06804</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08838</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01734</div>
+<div class="r">0.0083</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00011</div>
+<div class="r">0.9872</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05444</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01306</div>
+<div class="r">0.0470</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02580</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01560</div>
+<div class="r">0.0176</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02967</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03423</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10583</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01161</div>
+<div class="r">0.0773</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10476</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06844</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01854</div>
+<div class="r">0.0048</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08861</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01726</div>
+<div class="r">0.0087</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00012</div>
+<div class="r">0.9856</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05435</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01308</div>
+<div class="r">0.0467</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02591</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01553</div>
+<div class="r">0.0181</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02961</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03444</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10597</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01168</div>
+<div class="r">0.0757</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10504</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06860</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01830</div>
+<div class="r">0.0054</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08747</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11315</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05772</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.93229</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02480</div>
+<div class="r">0.0002</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11050</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07450</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12666</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08447</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13611</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10831</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04538</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00658</div>
+<div class="r">0.3166</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04006</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.40345</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09828</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03301</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23951</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00029</div>
+<div class="r">0.9645</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08381</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11576</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05311</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07932</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.22963</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18994</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.29106</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05149</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06580</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08910</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11336</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05940</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.91648</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02494</div>
+<div class="r">0.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11321</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07603</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12570</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08458</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13657</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11018</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04728</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00753</div>
+<div class="r">0.2522</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04005</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHILDREN</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10255</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03885</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00566</div>
+<div class="r">0.3890</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05045</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06646</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12542</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07707</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01762</div>
+<div class="r">0.0074</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08830</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04958</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03257</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.51831</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.15308</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05526</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.14224</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07928</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03146</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08396</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01501</div>
+<div class="r">0.0225</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12515</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04068</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05979</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01988</div>
+<div class="r">0.0025</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15911</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11276</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02472</div>
+<div class="r">0.0002</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11211</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01571</div>
+<div class="r">0.0169</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FINACE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.14304</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08746</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04041</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08728</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01970</div>
+<div class="r">0.0027</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.13276</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04089</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07264</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02197</div>
+<div class="r">0.0008</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.17040</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.11711</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+<div class="r">21802</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02789</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.11826</div>
+<div class="r">&lt;.0001</div>
+<div class="r">23135</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01398</div>
+<div class="r">0.0334</div>
+<div class="r">23135</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Corr" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX3" class="proc_title_group">
+<p class="c proctitle">CORR 过程</p>
+</div>
+<h1 class="contentprocname toc">Corr 过程</h1>
+<article aria-label="变量信息">
+<h1 class="contentitem toc">变量信息</h1>
+<table class="table" style="border-spacing: 0" aria-label="变量信息">
+<caption aria-label="变量信息"></caption>
+<colgroup><col/></colgroup><colgroup><col/></colgroup>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">23  变量:</th>
+<td class="data">C_1W_TR_3    FIX_3        FIX_6        FINACE_3     C_FIANCE_6   GAP_FIANCE_6 FINACE_6     C_1W_TR_6    A_L_FIANCE   DT_L_FINACE  DEPOSIT_3    DEPOSIT_6    AGE          AUM_3        DEBIT_3      DEBIT_6      FUND_3       AUM_6        FUND_6       CHILDREN     DOB          C_FIANCE_3   GAP_FINACE_3</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX4" aria-label="简单统计量">
+<h1 class="contentitem toc">简单统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="简单统计量">
+<caption aria-label="简单统计量"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">简单统计量</th>
+</tr>
+<tr>
+<th class="b header" scope="col">变量</th>
+<th class="r b header" scope="col">数目</th>
+<th class="r b header" scope="col">均值</th>
+<th class="r b header" scope="col">标准差</th>
+<th class="r b header" scope="col">总和</th>
+<th class="r b header" scope="col">最小值</th>
+<th class="r b header" scope="col">最大值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_3</th>
+<td class="r data">23135</td>
+<td class="r data">1.01158</td>
+<td class="r data">0.06830</td>
+<td class="r data">23403</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.41421</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_3</th>
+<td class="r data">23135</td>
+<td class="r data">4.83463</td>
+<td class="r data">0.25418</td>
+<td class="r data">111849</td>
+<td class="r data">3.67293</td>
+<td class="r data">5.69897</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_6</th>
+<td class="r data">23135</td>
+<td class="r data">4.76706</td>
+<td class="r data">0.28553</td>
+<td class="r data">110286</td>
+<td class="r data">3.45288</td>
+<td class="r data">5.69967</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_3</th>
+<td class="r data">23135</td>
+<td class="r data">4.87416</td>
+<td class="r data">0.24712</td>
+<td class="r data">112764</td>
+<td class="r data">3.85387</td>
+<td class="r data">5.84605</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_6</th>
+<td class="r data">23135</td>
+<td class="r data">1.50580</td>
+<td class="r data">0.53173</td>
+<td class="r data">34837</td>
+<td class="r data">1.00000</td>
+<td class="r data">4.79583</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">23135</td>
+<td class="r data">9.55355</td>
+<td class="r data">1.97575</td>
+<td class="r data">221021</td>
+<td class="r data">2.64575</td>
+<td class="r data">13.52775</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_6</th>
+<td class="r data">23135</td>
+<td class="r data">4.84972</td>
+<td class="r data">0.28921</td>
+<td class="r data">112198</td>
+<td class="r data">3.83792</td>
+<td class="r data">5.91739</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_6</th>
+<td class="r data">23135</td>
+<td class="r data">1.03362</td>
+<td class="r data">0.12596</td>
+<td class="r data">23913</td>
+<td class="r data">1.00000</td>
+<td class="r data">1.73205</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">A_L_FIANCE</th>
+<td class="r data">23135</td>
+<td class="r data">5.04735</td>
+<td class="r data">0.33251</td>
+<td class="r data">116771</td>
+<td class="r data">4.68305</td>
+<td class="r data">6.07918</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DT_L_FINACE</th>
+<td class="r data">23135</td>
+<td class="r data">4.30101</td>
+<td class="r data">0.01477</td>
+<td class="r data">99504</td>
+<td class="r data">4.24881</td>
+<td class="r data">4.31454</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_3</th>
+<td class="r data">23135</td>
+<td class="r data">3.60717</td>
+<td class="r data">1.45505</td>
+<td class="r data">83452</td>
+<td class="r data" style="white-space: nowrap">-0.74473</td>
+<td class="r data">5.79560</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_6</th>
+<td class="r data">23135</td>
+<td class="r data">3.68694</td>
+<td class="r data">1.38115</td>
+<td class="r data">85297</td>
+<td class="r data" style="white-space: nowrap">-0.60206</td>
+<td class="r data">5.77832</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">23135</td>
+<td class="r data">1.73529</td>
+<td class="r data">0.12467</td>
+<td class="r data">40146</td>
+<td class="r data">1.38021</td>
+<td class="r data">1.93952</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_3</th>
+<td class="r data">23135</td>
+<td class="r data">3.73854</td>
+<td class="r data">1.80477</td>
+<td class="r data">86491</td>
+<td class="r data" style="white-space: nowrap">-3.22185</td>
+<td class="r data">6.18215</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_3</th>
+<td class="r data">23135</td>
+<td class="r data">0.23722</td>
+<td class="r data">1.06900</td>
+<td class="r data">5488</td>
+<td class="r data">0</td>
+<td class="r data">5.54407</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_6</th>
+<td class="r data">23135</td>
+<td class="r data">0.23270</td>
+<td class="r data">1.04815</td>
+<td class="r data">5384</td>
+<td class="r data">0</td>
+<td class="r data">5.42597</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_3</th>
+<td class="r data">23135</td>
+<td class="r data">0.36976</td>
+<td class="r data">1.24616</td>
+<td class="r data">8554</td>
+<td class="r data" style="white-space: nowrap">-3.22185</td>
+<td class="r data">5.50906</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">23135</td>
+<td class="r data">3.62251</td>
+<td class="r data">1.76966</td>
+<td class="r data">83807</td>
+<td class="r data" style="white-space: nowrap">-4.00000</td>
+<td class="r data">6.01370</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_6</th>
+<td class="r data">23135</td>
+<td class="r data">0.36386</td>
+<td class="r data">1.21059</td>
+<td class="r data">8418</td>
+<td class="r data" style="white-space: nowrap">-3.52288</td>
+<td class="r data">5.35951</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHILDREN</th>
+<td class="r data">23135</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">23135</td>
+<td class="r data">3.43618</td>
+<td class="r data">0.31427</td>
+<td class="r data">79496</td>
+<td class="r data">2.49554</td>
+<td class="r data">3.77371</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_3</th>
+<td class="r data">23135</td>
+<td class="r data">1.04509</td>
+<td class="r data">0.18985</td>
+<td class="r data">24178</td>
+<td class="r data">1.00000</td>
+<td class="r data">2.23607</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FINACE_3</th>
+<td class="r data">23135</td>
+<td class="r data">2.91470</td>
+<td class="r data">0.33541</td>
+<td class="r data">67432</td>
+<td class="r data">1.00000</td>
+<td class="r data">3.00000</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article id="IDX5" aria-label="Pearson 相关">
+<h1 class="contentitem toc">Pearson 相关</h1>
+<table class="table" style="border-spacing: 0" aria-label="Pearson 相关">
+<caption aria-label="Pearson 相关"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="24" scope="colgroup">Pearson 相关系数, N = 23135<br/>Prob &gt; |r|, H0: Rho=0</th>
+</tr>
+<tr>
+<th class="c headerempty" scope="col">&#160;</th>
+<th class="r b header" scope="col">C_1W_TR_3</th>
+<th class="r b header" scope="col">FIX_3</th>
+<th class="r b header" scope="col">FIX_6</th>
+<th class="r b header" scope="col">FINACE_3</th>
+<th class="r b header" scope="col">C_FIANCE_6</th>
+<th class="r b header" scope="col">GAP_FIANCE_6</th>
+<th class="r b header" scope="col">FINACE_6</th>
+<th class="r b header" scope="col">C_1W_TR_6</th>
+<th class="r b header" scope="col">A_L_FIANCE</th>
+<th class="r b header" scope="col">DT_L_FINACE</th>
+<th class="r b header" scope="col">DEPOSIT_3</th>
+<th class="r b header" scope="col">DEPOSIT_6</th>
+<th class="r b header" scope="col">AGE</th>
+<th class="r b header" scope="col">AUM_3</th>
+<th class="r b header" scope="col">DEBIT_3</th>
+<th class="r b header" scope="col">DEBIT_6</th>
+<th class="r b header" scope="col">FUND_3</th>
+<th class="r b header" scope="col">AUM_6</th>
+<th class="r b header" scope="col">FUND_6</th>
+<th class="r b header" scope="col">CHILDREN</th>
+<th class="r b header" scope="col">DOB</th>
+<th class="r b header" scope="col">C_FIANCE_3</th>
+<th class="r b header" scope="col">GAP_FINACE_3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02850</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03409</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04335</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18116</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.13235</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06298</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.64418</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04321</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05483</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11148</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10833</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04773</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12921</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03696</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03691</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09883</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12754</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09757</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04801</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.17719</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.18264</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02850</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.86849</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01348</div>
+<div class="r">0.0403</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02372</div>
+<div class="r">0.0003</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01140</div>
+<div class="r">0.0829</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00781</div>
+<div class="r">0.2352</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02790</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04501</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02324</div>
+<div class="r">0.0004</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10388</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10693</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03713</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05748</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03903</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02038</div>
+<div class="r">0.0019</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05725</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02072</div>
+<div class="r">0.0016</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02053</div>
+<div class="r">0.0018</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03361</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03197</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FIX_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03409</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.86849</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00819</div>
+<div class="r">0.2131</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03632</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01703</div>
+<div class="r">0.0096</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00143</div>
+<div class="r">0.8281</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04528</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03764</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02973</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13680</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12669</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04500</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07815</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04935</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04967</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02001</div>
+<div class="r">0.0023</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07660</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02036</div>
+<div class="r">0.0020</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03384</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03462</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03295</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04335</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01348</div>
+<div class="r">0.0403</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00819</div>
+<div class="r">0.2131</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.36203</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.33631</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.59990</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01745</div>
+<div class="r">0.0079</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24147</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00022</div>
+<div class="r">0.9737</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02927</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03163</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02231</div>
+<div class="r">0.0007</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09179</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00972</div>
+<div class="r">0.1392</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00958</div>
+<div class="r">0.1453</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01889</div>
+<div class="r">0.0041</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08353</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02073</div>
+<div class="r">0.0016</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03569</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.30419</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.30739</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18116</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02372</div>
+<div class="r">0.0003</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03632</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.36203</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.86083</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.43525</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.19115</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11302</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06473</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05200</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06150</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09548</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16613</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00138</div>
+<div class="r">0.8340</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00150</div>
+<div class="r">0.8195</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09365</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18105</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09658</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07234</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.59149</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.61090</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FIANCE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.13235</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01140</div>
+<div class="r">0.0829</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01703</div>
+<div class="r">0.0096</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.33631</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.86083</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.34796</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12751</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09167</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03591</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01307</div>
+<div class="r">0.0468</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01151</div>
+<div class="r">0.0801</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10276</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05162</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00130</div>
+<div class="r">0.8430</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00119</div>
+<div class="r">0.8568</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07108</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05376</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07381</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05918</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.49995</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.51547</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FINACE_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06298</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00781</div>
+<div class="r">0.2352</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00143</div>
+<div class="r">0.8281</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.59990</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.43525</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.34796</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05280</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.28873</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02346</div>
+<div class="r">0.0004</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08155</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06165</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00901</div>
+<div class="r">0.1704</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15267</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01865</div>
+<div class="r">0.0046</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01859</div>
+<div class="r">0.0047</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03926</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15727</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04077</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02686</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.27084</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.27309</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_1W_TR_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.64418</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02790</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04528</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01745</div>
+<div class="r">0.0079</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.19115</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12751</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05280</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04134</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09624</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15423</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16869</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03079</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.17601</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04792</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04795</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12449</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18135</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12785</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08098</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16913</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.17477</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">A_L_FIANCE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04321</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04501</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03764</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24147</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11302</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09167</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.28873</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04134</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02730</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03409</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04005</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07188</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07314</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03201</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03194</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03537</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07620</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03551</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04807</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10274</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.10476</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DT_L_FINACE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05483</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02324</div>
+<div class="r">0.0004</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02973</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00022</div>
+<div class="r">0.9737</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06473</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03591</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02346</div>
+<div class="r">0.0004</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09624</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02730</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.27895</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.29620</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04347</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.34552</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04883</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08274</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.35611</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08436</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08695</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.14109</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.15234</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11148</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10388</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13680</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02927</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05200</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01307</div>
+<div class="r">0.0468</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08155</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15423</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03409</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.27895</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.94774</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12327</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.76201</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08522</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08561</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09214</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.74626</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09280</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24433</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12556</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.13602</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEPOSIT_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10833</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10693</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12669</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03163</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06150</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01151</div>
+<div class="r">0.0801</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06165</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16869</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04005</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.29620</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.94774</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11658</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.73798</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08912</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08942</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09499</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.74892</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09649</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23062</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11479</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12398</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AGE</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04773</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03713</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04500</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02231</div>
+<div class="r">0.0007</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09548</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10276</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00901</div>
+<div class="r">0.1704</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03079</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07188</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04347</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12327</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11658</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13159</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10005</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10003</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00631</div>
+<div class="r">0.3371</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12603</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00805</div>
+<div class="r">0.2206</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.36918</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06462</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06855</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12921</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05748</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07815</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09179</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16613</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05162</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15267</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.17601</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07314</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.34552</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.76201</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.73798</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.13159</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20602</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20604</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23528</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.97919</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23555</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24546</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.21967</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.23378</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03696</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04935</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00972</div>
+<div class="r">0.1392</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00138</div>
+<div class="r">0.8340</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00130</div>
+<div class="r">0.8430</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01865</div>
+<div class="r">0.0046</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04792</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03201</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08522</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08912</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10005</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20602</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.99964</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05697</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20331</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05537</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10488</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00297</div>
+<div class="r">0.6515</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00379</div>
+<div class="r">0.5644</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DEBIT_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03691</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03903</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04967</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00958</div>
+<div class="r">0.1453</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00150</div>
+<div class="r">0.8195</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00119</div>
+<div class="r">0.8568</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.01859</div>
+<div class="r">0.0047</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04795</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03194</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04883</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08561</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08942</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10003</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20604</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.99964</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05695</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20335</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05535</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10490</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00303</div>
+<div class="r">0.6445</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00384</div>
+<div class="r">0.5587</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09883</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02038</div>
+<div class="r">0.0019</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02001</div>
+<div class="r">0.0023</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.01889</div>
+<div class="r">0.0041</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09365</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07108</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03926</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12449</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03537</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08274</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09214</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09499</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00631</div>
+<div class="r">0.3371</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23528</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05697</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05695</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23296</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.98989</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04118</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09674</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09905</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">AUM_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12754</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05725</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07660</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08353</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18105</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.05376</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.15727</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.18135</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.07620</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.35611</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.74626</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.74892</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12603</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.97919</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20331</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.20335</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23296</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23507</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23329</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.21511</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.22875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">FUND_6</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09757</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02072</div>
+<div class="r">0.0016</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02036</div>
+<div class="r">0.0020</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02073</div>
+<div class="r">0.0016</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09658</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07381</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04077</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12785</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03551</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08436</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09280</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09649</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00805</div>
+<div class="r">0.2206</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23555</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05537</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05535</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.98989</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23507</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04316</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09827</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.10095</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">CHILDREN</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">DOB</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04801</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.02053</div>
+<div class="r">0.0018</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03384</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03569</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.07234</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.05918</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.02686</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.08098</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.04807</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.08695</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24433</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23062</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.36918</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.24546</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10488</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10490</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04118</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.23329</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.04316</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06472</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06570</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">C_FIANCE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.17719</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03361</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.03462</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.30419</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.59149</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.49995</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.27084</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.16913</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.10274</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.14109</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.12556</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.11479</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06462</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.21967</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00297</div>
+<div class="r">0.6515</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.00303</div>
+<div class="r">0.6445</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09674</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.21511</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.09827</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.06472</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.98408</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">GAP_FINACE_3</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.18264</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03197</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.03295</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.30739</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.61090</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.51547</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.27309</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.17477</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.10476</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.15234</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.13602</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.12398</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06855</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.23378</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00379</div>
+<div class="r">0.5644</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.00384</div>
+<div class="r">0.5587</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.09905</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.22875</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.10095</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">.</div>
+<div class="r">.</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0.06570</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r" style="white-space: nowrap">-0.98408</div>
+<div class="r">&lt;.0001</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">1.00000</div>
+<div class="r">&#160;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>

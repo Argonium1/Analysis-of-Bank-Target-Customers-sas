@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html class="ods_68e879d3-d8d5-4998-905e-1f141863364c" lang="zh" xml:lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>结果: 程序 1.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c section > table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c section > pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c div > table,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c div > pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c article > table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c article > pre,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j section > table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j section > pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j div > table,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j div > pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j article > table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j article > pre,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c p.note, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c p.fatal,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j p.note, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j p.fatal,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body.c > table.layoutcontainer, .ods_68e879d3-d8d5-4998-905e-1f141863364c .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l p.note,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.l p.fatal { margin-left: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c p.note,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r p.note,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r table, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r pre, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r p.note,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion.r p.fatal { margin-right: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c article, .ods_68e879d3-d8d5-4998-905e-1f141863364c aside, .ods_68e879d3-d8d5-4998-905e-1f141863364c details, .ods_68e879d3-d8d5-4998-905e-1f141863364c figcaption, .ods_68e879d3-d8d5-4998-905e-1f141863364c figure, .ods_68e879d3-d8d5-4998-905e-1f141863364c footer, .ods_68e879d3-d8d5-4998-905e-1f141863364c header, .ods_68e879d3-d8d5-4998-905e-1f141863364c hgroup, .ods_68e879d3-d8d5-4998-905e-1f141863364c nav, .ods_68e879d3-d8d5-4998-905e-1f141863364c section { display: block }
+html.ods_68e879d3-d8d5-4998-905e-1f141863364c { font-size: 100% }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c ul, .ods_68e879d3-d8d5-4998-905e-1f141863364c ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c dd { margin: 0 0 0 40px }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c nav ul, .ods_68e879d3-d8d5-4998-905e-1f141863364c nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c img { border: 0; vertical-align: middle }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c svg:not(:root) { overflow: hidden }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c figure { margin: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c table { border-collapse: collapse; border-spacing: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c p { margin-top: 0; text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h1.heading1 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h2.heading2 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h3.heading3 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h4.heading4 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h5.heading5 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c h6.heading6 { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c span { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c table { margin-bottom: 1em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c td, .ods_68e879d3-d8d5-4998-905e-1f141863364c th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c td[class$="fixed"], .ods_68e879d3-d8d5-4998-905e-1f141863364c th[class$="fixed"] { white-space: pre }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c section, .ods_68e879d3-d8d5-4998-905e-1f141863364c article { padding-top: 1px; padding-bottom: 8px }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .stacked-value { text-align: left; display: block }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .stacked-cell > .stacked-value, .ods_68e879d3-d8d5-4998-905e-1f141863364c td.data > td.data, .ods_68e879d3-d8d5-4998-905e-1f141863364c th.data > td.data, .ods_68e879d3-d8d5-4998-905e-1f141863364c th.data > th.data, .ods_68e879d3-d8d5-4998-905e-1f141863364c td.data > th.data, .ods_68e879d3-d8d5-4998-905e-1f141863364c th.header > th.header { border: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .stacked-cell > div.data { border-width: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > p { margin: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .batch { display: table }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .toc { display: none }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .proc_note_group, .ods_68e879d3-d8d5-4998-905e-1f141863364c .proc_title_group { margin-bottom: 1em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c p.proctitle { margin: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c p.note, .ods_68e879d3-d8d5-4998-905e-1f141863364c p.warning, .ods_68e879d3-d8d5-4998-905e-1f141863364c p.error, .ods_68e879d3-d8d5-4998-905e-1f141863364c p.fatal { display: table }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notebanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .warnbanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .errorbanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalbanner,
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notecontent, .ods_68e879d3-d8d5-4998-905e-1f141863364c .warncontent, .ods_68e879d3-d8d5-4998-905e-1f141863364c .errorcontent, .ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notebanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .warnbanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .errorbanner, .ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalbanner { padding-right: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body > div > ol li { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .c { text-align: center }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .r { text-align: right }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .l { text-align: left }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .j { text-align: justify }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .d { text-align: right }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .b { vertical-align: bottom }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .m { vertical-align: middle }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .t { vertical-align: top }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c a:active { color: #800080 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .batch > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .batch > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .batch { border: hidden; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .bycontentfolder {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > colgroup > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > colgroup, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > * > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer > tfoot { border: none; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .cell, .ods_68e879d3-d8d5-4998-905e-1f141863364c .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .contentfolder, .ods_68e879d3-d8d5-4998-905e-1f141863364c .contentitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .contentproclabel, .ods_68e879d3-d8d5-4998-905e-1f141863364c .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .data, .ods_68e879d3-d8d5-4998-905e-1f141863364c .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .folderaction {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .graph > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .graph > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .graph { border: hidden; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .heading1, .ods_68e879d3-d8d5-4998-905e-1f141863364c .heading2, .ods_68e879d3-d8d5-4998-905e-1f141863364c .heading3, .ods_68e879d3-d8d5-4998-905e-1f141863364c .heading4, .ods_68e879d3-d8d5-4998-905e-1f141863364c .heading5, .ods_68e879d3-d8d5-4998-905e-1f141863364c .heading6 { font-family: MYingHei_18030_C-Medium, Helvetica, sans-serif }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .indexaction, .ods_68e879d3-d8d5-4998-905e-1f141863364c .indexitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutcontainer, .ods_68e879d3-d8d5-4998-905e-1f141863364c .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c a:link { color: #0000ff }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .list3, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list4, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list5, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list6, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list7, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list8, .ods_68e879d3-d8d5-4998-905e-1f141863364c .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem3, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem4, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem5, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem6, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem7, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem8, .ods_68e879d3-d8d5-4998-905e-1f141863364c .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .output > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .output > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .output { border: hidden; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pagesitem {
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pagesproclabel, .ods_68e879d3-d8d5-4998-905e-1f141863364c .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > colgroup > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > colgroup, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > * > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip > tfoot { border: none; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, monospace, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter10, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter2, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter3, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter4, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter5, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter6, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter7, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter8, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle10, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle2, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle3, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle4, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle5, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle6, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle7, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle8, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > colgroup > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > colgroup, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > * > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer > tfoot { border: none; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .table > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .table > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .table { border: hidden; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > colgroup > col, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > colgroup, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > * > tr, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > thead, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > tbody, .ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer > tfoot { border: none; }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c a:visited { color: #800080 }
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: MYingHei_18030_C-Medium, Helvetica, Helv, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_68e879d3-d8d5-4998-905e-1f141863364c .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: CSongGB18030C-LightHWL, Courier, sans-serif;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_68e879d3-d8d5-4998-905e-1f141863364c" class="c body">
+<h1 class="body toc">结果: 程序 1.sas</h1>
+<section data-name="Means" data-sec-type="proc">
+<div id="IDX" class="proc_title_group">
+<p class="c proctitle">MEANS PROCEDURE</p>
+</div>
+<h1 class="contentprocname toc">Means 过程</h1>
+<article aria-label="汇总统计量">
+<h1 class="contentitem toc">汇总统计量</h1>
+<table class="table" style="border-spacing: 0" aria-label="汇总统计量">
+<caption aria-label="汇总统计量"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">变量</th>
+<th class="r b header" scope="col">数目</th>
+<th class="r b header" scope="col">缺失值个数</th>
+<th class="r b header" scope="col">最小值</th>
+<th class="r b header" scope="col">最大值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="data">
+<div class="stacked-cell">
+<div>AGE</div>
+<div>AUM_3</div>
+<div>AUM_6</div>
+<div>A_L_FIANCE</div>
+<div>CHILDREN</div>
+<div>CUST_ID</div>
+<div>C_1W_D_3</div>
+<div>C_1W_D_6</div>
+<div>C_1W_TR_3</div>
+<div>C_1W_TR_6</div>
+<div>C_FIANCE_6</div>
+<div>C_FIX_3</div>
+<div>C_FIX_6</div>
+<div>C_FUND_3</div>
+<div>C_FUND_6</div>
+<div>DEBIT_3</div>
+<div>DEBIT_6</div>
+<div>DEPOSIT_3</div>
+<div>DEPOSIT_6</div>
+<div>DOB</div>
+<div>DT_L_FINACE</div>
+<div>FINACE_3</div>
+<div>FINACE_6</div>
+<div>FIX_3</div>
+<div>FIX_6</div>
+<div>FUND_3</div>
+<div>FUND_6</div>
+<div>GAP_FIANCE_6</div>
+<div>PAYROLL_3</div>
+<div>PAYROLL_6</div>
+<div>TARGET</div>
+<div>YJL_6</div>
+<div>C_FIANCE_3</div>
+<div>GAP_FINACE_3</div>
+</div>
+</th>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">32611</div>
+<div class="r">32621</div>
+<div class="r">32655</div>
+<div class="r">29290</div>
+<div class="r">32671</div>
+<div class="r">33342</div>
+<div class="r">2340</div>
+<div class="r">3724</div>
+<div class="r">6792</div>
+<div class="r">12269</div>
+<div class="r">9753</div>
+<div class="r">2641</div>
+<div class="r">4167</div>
+<div class="r">1083</div>
+<div class="r">1700</div>
+<div class="r">32621</div>
+<div class="r">32621</div>
+<div class="r">30871</div>
+<div class="r">30986</div>
+<div class="r">32702</div>
+<div class="r">29290</div>
+<div class="r">7629</div>
+<div class="r">10537</div>
+<div class="r">6686</div>
+<div class="r">7226</div>
+<div class="r">32621</div>
+<div class="r">32655</div>
+<div class="r">9753</div>
+<div class="r">2349</div>
+<div class="r">2954</div>
+<div class="r">33342</div>
+<div class="r">2879</div>
+<div class="r">6078</div>
+<div class="r">6078</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">731</div>
+<div class="r">721</div>
+<div class="r">687</div>
+<div class="r">4052</div>
+<div class="r">671</div>
+<div class="r">0</div>
+<div class="r">31002</div>
+<div class="r">29618</div>
+<div class="r">26550</div>
+<div class="r">21073</div>
+<div class="r">23589</div>
+<div class="r">30701</div>
+<div class="r">29175</div>
+<div class="r">32259</div>
+<div class="r">31642</div>
+<div class="r">721</div>
+<div class="r">721</div>
+<div class="r">2471</div>
+<div class="r">2356</div>
+<div class="r">640</div>
+<div class="r">4052</div>
+<div class="r">25713</div>
+<div class="r">22805</div>
+<div class="r">26656</div>
+<div class="r">26116</div>
+<div class="r">721</div>
+<div class="r">687</div>
+<div class="r">23589</div>
+<div class="r">30993</div>
+<div class="r">30388</div>
+<div class="r">0</div>
+<div class="r">30463</div>
+<div class="r">27264</div>
+<div class="r">27264</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">5000.00</div>
+<div class="r">0</div>
+<div class="r">3000000506</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">0.000700000</div>
+<div class="r">0.000200000</div>
+<div class="r">106.0000000</div>
+<div class="r">17295.00</div>
+<div class="r">549.4505000</div>
+<div class="r">546.4481000</div>
+<div class="r">32.9670000</div>
+<div class="r">24.5902000</div>
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">0</div>
+<div class="r">2.0000000</div>
+<div class="r">2.0000000</div>
+<div class="r">0</div>
+<div class="r">546.4481000</div>
+<div class="r">1.0000000</div>
+<div class="r">1.0000000</div>
+</div>
+</td>
+<td class="r data">
+<div class="stacked-cell">
+<div class="r">100.0000000</div>
+<div class="r">54116997.47</div>
+<div class="r">38420589.94</div>
+<div class="r">30000000.00</div>
+<div class="r">0</div>
+<div class="r">6011190325</div>
+<div class="r">14.0000000</div>
+<div class="r">56.0000000</div>
+<div class="r">16.0000000</div>
+<div class="r">58.0000000</div>
+<div class="r">368.0000000</div>
+<div class="r">244.0000000</div>
+<div class="r">612.0000000</div>
+<div class="r">47.0000000</div>
+<div class="r">197.0000000</div>
+<div class="r">6310000.00</div>
+<div class="r">4443333.33</div>
+<div class="r">10210621.44</div>
+<div class="r">9520688.51</div>
+<div class="r">7596.00</div>
+<div class="r">20635.00</div>
+<div class="r">31286923.08</div>
+<div class="r">37877103.83</div>
+<div class="r">9186813.19</div>
+<div class="r">8240437.16</div>
+<div class="r">23047856.14</div>
+<div class="r">14876723.77</div>
+<div class="r">183.0000000</div>
+<div class="r">2327844.38</div>
+<div class="r">2240885.85</div>
+<div class="r">1.0000000</div>
+<div class="r">37877103.83</div>
+<div class="r">9.0000000</div>
+<div class="r">9.0000000</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Freq" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX1" class="proc_title_group">
+<p class="c proctitle">FREQ 过程</p>
+</div>
+<h1 class="contentprocname toc">Freq 过程</h1>
+<section>
+<h1 class="contentfolder toc">表“CHANNEL_PRE”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">CHANNEL_PRE</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">4052</td>
+<td class="r data">12.15</td>
+<td class="r data">4052</td>
+<td class="r data">12.15</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">手机银行</th>
+<td class="r data">1595</td>
+<td class="r data">4.78</td>
+<td class="r data">5647</td>
+<td class="r data">16.94</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">柜面</th>
+<td class="r data">13968</td>
+<td class="r data">41.89</td>
+<td class="r data">19615</td>
+<td class="r data">58.83</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">网银</th>
+<td class="r data">13727</td>
+<td class="r data">41.17</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX2">
+<h1 class="contentfolder toc">表“C_DEBIT_3”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">C_DEBIT_3</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">33190</td>
+<td class="r data">99.54</td>
+<td class="r data">33190</td>
+<td class="r data">99.54</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">118</td>
+<td class="r data">0.35</td>
+<td class="r data">33308</td>
+<td class="r data">99.90</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">21</td>
+<td class="r data">0.06</td>
+<td class="r data">33329</td>
+<td class="r data">99.96</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">5</td>
+<td class="r data">0.01</td>
+<td class="r data">33334</td>
+<td class="r data">99.98</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">4</th>
+<td class="r data">2</td>
+<td class="r data">0.01</td>
+<td class="r data">33336</td>
+<td class="r data">99.98</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5</th>
+<td class="r data">4</td>
+<td class="r data">0.01</td>
+<td class="r data">33340</td>
+<td class="r data">99.99</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">6</th>
+<td class="r data">2</td>
+<td class="r data">0.01</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX3">
+<h1 class="contentfolder toc">表“C_DEBIT_6”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">C_DEBIT_6</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">33065</td>
+<td class="r data">99.17</td>
+<td class="r data">33065</td>
+<td class="r data">99.17</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">215</td>
+<td class="r data">0.64</td>
+<td class="r data">33280</td>
+<td class="r data">99.81</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">43</td>
+<td class="r data">0.13</td>
+<td class="r data">33323</td>
+<td class="r data">99.94</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">12</td>
+<td class="r data">0.04</td>
+<td class="r data">33335</td>
+<td class="r data">99.98</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">4</th>
+<td class="r data">1</td>
+<td class="r data">0.00</td>
+<td class="r data">33336</td>
+<td class="r data">99.98</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5</th>
+<td class="r data">4</td>
+<td class="r data">0.01</td>
+<td class="r data">33340</td>
+<td class="r data">99.99</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">6</th>
+<td class="r data">2</td>
+<td class="r data">0.01</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX4">
+<h1 class="contentfolder toc">表“C_YJL_3”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">C_YJL_3</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">31843</td>
+<td class="r data">95.50</td>
+<td class="r data">31843</td>
+<td class="r data">95.50</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">253</td>
+<td class="r data">0.76</td>
+<td class="r data">32096</td>
+<td class="r data">96.26</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">375</td>
+<td class="r data">1.12</td>
+<td class="r data">32471</td>
+<td class="r data">97.39</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">295</td>
+<td class="r data">0.88</td>
+<td class="r data">32766</td>
+<td class="r data">98.27</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">4</th>
+<td class="r data">178</td>
+<td class="r data">0.53</td>
+<td class="r data">32944</td>
+<td class="r data">98.81</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5</th>
+<td class="r data">141</td>
+<td class="r data">0.42</td>
+<td class="r data">33085</td>
+<td class="r data">99.23</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">6</th>
+<td class="r data">92</td>
+<td class="r data">0.28</td>
+<td class="r data">33177</td>
+<td class="r data">99.51</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">7</th>
+<td class="r data">71</td>
+<td class="r data">0.21</td>
+<td class="r data">33248</td>
+<td class="r data">99.72</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">8</th>
+<td class="r data">53</td>
+<td class="r data">0.16</td>
+<td class="r data">33301</td>
+<td class="r data">99.88</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">9</th>
+<td class="r data">41</td>
+<td class="r data">0.12</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX5">
+<h1 class="contentfolder toc">表“C_YJL_6”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">C_YJL_6</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">30682</td>
+<td class="r data">92.02</td>
+<td class="r data">30682</td>
+<td class="r data">92.02</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">556</td>
+<td class="r data">1.67</td>
+<td class="r data">31238</td>
+<td class="r data">93.69</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">567</td>
+<td class="r data">1.70</td>
+<td class="r data">31805</td>
+<td class="r data">95.39</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">442</td>
+<td class="r data">1.33</td>
+<td class="r data">32247</td>
+<td class="r data">96.72</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">4</th>
+<td class="r data">294</td>
+<td class="r data">0.88</td>
+<td class="r data">32541</td>
+<td class="r data">97.60</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5</th>
+<td class="r data">242</td>
+<td class="r data">0.73</td>
+<td class="r data">32783</td>
+<td class="r data">98.32</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">6</th>
+<td class="r data">198</td>
+<td class="r data">0.59</td>
+<td class="r data">32981</td>
+<td class="r data">98.92</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">7</th>
+<td class="r data">138</td>
+<td class="r data">0.41</td>
+<td class="r data">33119</td>
+<td class="r data">99.33</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">8</th>
+<td class="r data">123</td>
+<td class="r data">0.37</td>
+<td class="r data">33242</td>
+<td class="r data">99.70</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">9</th>
+<td class="r data">100</td>
+<td class="r data">0.30</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX6">
+<h1 class="contentfolder toc">表“EDUCATION”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">EDUCATION</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">29449</td>
+<td class="r data">88.32</td>
+<td class="r data">29449</td>
+<td class="r data">88.32</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">中等职业教育</th>
+<td class="r data">106</td>
+<td class="r data">0.32</td>
+<td class="r data">29555</td>
+<td class="r data">88.64</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">其他</th>
+<td class="r data">199</td>
+<td class="r data">0.60</td>
+<td class="r data">29754</td>
+<td class="r data">89.24</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">初级中学教育</th>
+<td class="r data">937</td>
+<td class="r data">2.81</td>
+<td class="r data">30691</td>
+<td class="r data">92.05</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">大学专科教育</th>
+<td class="r data">1146</td>
+<td class="r data">3.44</td>
+<td class="r data">31837</td>
+<td class="r data">95.49</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">大学本科教育</th>
+<td class="r data">1207</td>
+<td class="r data">3.62</td>
+<td class="r data">33044</td>
+<td class="r data">99.11</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">小学教育</th>
+<td class="r data">82</td>
+<td class="r data">0.25</td>
+<td class="r data">33126</td>
+<td class="r data">99.35</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">研究生教育</th>
+<td class="r data">186</td>
+<td class="r data">0.56</td>
+<td class="r data">33312</td>
+<td class="r data">99.91</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">硕士研究生毕</th>
+<td class="r data">30</td>
+<td class="r data">0.09</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX7">
+<h1 class="contentfolder toc">表“F_CC”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_CC</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">25856</td>
+<td class="r data">77.55</td>
+<td class="r data">25856</td>
+<td class="r data">77.55</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">7486</td>
+<td class="r data">22.45</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX8">
+<h1 class="contentfolder toc">表“F_CLOAN”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_CLOAN</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">33046</td>
+<td class="r data">99.11</td>
+<td class="r data">33046</td>
+<td class="r data">99.11</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">296</td>
+<td class="r data">0.89</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX9">
+<h1 class="contentfolder toc">表“F_FUND”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_FUND</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">30644</td>
+<td class="r data">91.91</td>
+<td class="r data">30644</td>
+<td class="r data">91.91</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">2698</td>
+<td class="r data">8.09</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX10">
+<h1 class="contentfolder toc">表“F_HLOAN”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_HLOAN</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">32492</td>
+<td class="r data">97.45</td>
+<td class="r data">32492</td>
+<td class="r data">97.45</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">850</td>
+<td class="r data">2.55</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX11">
+<h1 class="contentfolder toc">表“F_MOBILE”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_MOBILE</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">26883</td>
+<td class="r data">80.63</td>
+<td class="r data">26883</td>
+<td class="r data">80.63</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">6459</td>
+<td class="r data">19.37</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX12">
+<h1 class="contentfolder toc">表“F_PAYROLL”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_PAYROLL</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">28862</td>
+<td class="r data">86.56</td>
+<td class="r data">28862</td>
+<td class="r data">86.56</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">4480</td>
+<td class="r data">13.44</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX13">
+<h1 class="contentfolder toc">表“F_STAFF”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_STAFF</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">33014</td>
+<td class="r data">99.02</td>
+<td class="r data">33014</td>
+<td class="r data">99.02</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">328</td>
+<td class="r data">0.98</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX14">
+<h1 class="contentfolder toc">表“F_TEL”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_TEL</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">18915</td>
+<td class="r data">56.73</td>
+<td class="r data">18915</td>
+<td class="r data">56.73</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">14427</td>
+<td class="r data">43.27</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX15">
+<h1 class="contentfolder toc">表“F_VIP”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_VIP</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">18698</td>
+<td class="r data">56.08</td>
+<td class="r data">18698</td>
+<td class="r data">56.08</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">14644</td>
+<td class="r data">43.92</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX16">
+<h1 class="contentfolder toc">表“F_WEB”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_WEB</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">7125</td>
+<td class="r data">21.37</td>
+<td class="r data">7125</td>
+<td class="r data">21.37</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">26217</td>
+<td class="r data">78.63</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX17">
+<h1 class="contentfolder toc">表“F_YJL”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_YJL</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">31445</td>
+<td class="r data">94.31</td>
+<td class="r data">31445</td>
+<td class="r data">94.31</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YE</th>
+<td class="r data">1897</td>
+<td class="r data">5.69</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX18">
+<h1 class="contentfolder toc">表“F_YLJ”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">F_YLJ</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">NO</th>
+<td class="r data">21812</td>
+<td class="r data">65.42</td>
+<td class="r data">21812</td>
+<td class="r data">65.42</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">YES</th>
+<td class="r data">11530</td>
+<td class="r data">34.58</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX19">
+<h1 class="contentfolder toc">表“GENDER”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">GENDER</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">女性</th>
+<td class="r data">20814</td>
+<td class="r data">62.43</td>
+<td class="r data">20814</td>
+<td class="r data">62.43</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">未知</th>
+<td class="r data">11</td>
+<td class="r data">0.03</td>
+<td class="r data">20825</td>
+<td class="r data">62.46</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">男性</th>
+<td class="r data">12517</td>
+<td class="r data">37.54</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX20">
+<h1 class="contentfolder toc">表“MARR”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">MARR</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">28354</td>
+<td class="r data">85.04</td>
+<td class="r data">28354</td>
+<td class="r data">85.04</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">已婚</th>
+<td class="r data">3748</td>
+<td class="r data">11.24</td>
+<td class="r data">32102</td>
+<td class="r data">96.28</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">未婚</th>
+<td class="r data">579</td>
+<td class="r data">1.74</td>
+<td class="r data">32681</td>
+<td class="r data">98.02</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">未说明的婚姻状况</th>
+<td class="r data">643</td>
+<td class="r data">1.93</td>
+<td class="r data">33324</td>
+<td class="r data">99.95</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">离婚</th>
+<td class="r data">18</td>
+<td class="r data">0.05</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section id="IDX21">
+<h1 class="contentfolder toc">表“YJL_3”</h1>
+<article aria-label="单因子频数">
+<h1 class="contentitem toc">单因子频数</h1>
+<table class="table" style="border-spacing: 0" aria-label="单因子频数">
+<caption aria-label="单因子频数"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="b header" scope="col">YJL_3</th>
+<th class="r b header" scope="col">频数</th>
+<th class="r b header" scope="col">百分比</th>
+<th class="r b header" scope="col">累积<br/>频数</th>
+<th class="r b header" scope="col">累积<br/>百分比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="rowheader" scope="row">&#160;</th>
+<td class="r data">31445</td>
+<td class="r data">94.31</td>
+<td class="r data">31445</td>
+<td class="r data">94.31</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">1</th>
+<td class="r data">561</td>
+<td class="r data">1.68</td>
+<td class="r data">32006</td>
+<td class="r data">95.99</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">2</th>
+<td class="r data">312</td>
+<td class="r data">0.94</td>
+<td class="r data">32318</td>
+<td class="r data">96.93</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">3</th>
+<td class="r data">263</td>
+<td class="r data">0.79</td>
+<td class="r data">32581</td>
+<td class="r data">97.72</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">4</th>
+<td class="r data">190</td>
+<td class="r data">0.57</td>
+<td class="r data">32771</td>
+<td class="r data">98.29</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">5</th>
+<td class="r data">118</td>
+<td class="r data">0.35</td>
+<td class="r data">32889</td>
+<td class="r data">98.64</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">6</th>
+<td class="r data">133</td>
+<td class="r data">0.40</td>
+<td class="r data">33022</td>
+<td class="r data">99.04</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">7</th>
+<td class="r data">122</td>
+<td class="r data">0.37</td>
+<td class="r data">33144</td>
+<td class="r data">99.41</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">8</th>
+<td class="r data">103</td>
+<td class="r data">0.31</td>
+<td class="r data">33247</td>
+<td class="r data">99.72</td>
+</tr>
+<tr>
+<th class="rowheader" scope="row">9</th>
+<td class="r data">95</td>
+<td class="r data">0.28</td>
+<td class="r data">33342</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</section>
+</div>
+</body>
+</html>
